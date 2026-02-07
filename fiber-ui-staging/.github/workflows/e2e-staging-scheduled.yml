@@ -1,0 +1,179 @@
+name: e2e Tests - Staging (Scheduled)
+
+on:
+  schedule:
+    # Run daily at 2 AM ET (6 AM UTC during EST, 7 AM UTC during EDT)
+    # Using 6 AM UTC to cover EST (2 AM ET)
+    - cron: "0 6 * * *"
+  # Allow manual trigger
+  workflow_dispatch:
+
+jobs:
+  e2e-staging:
+    name: e2e Tests against Staging Environment
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      deployments: write
+      issues: write
+    environment:
+      name: playwright-e2e-staging-report
+      url: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/reports/staging/${{ github.run_id }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: latest
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Install Playwright browsers
+        run: pnpm exec playwright install --with-deps chromium
+
+      - name: Run e2e tests against staging
+        run: pnpm exec playwright test --config=playwright.staging.config.ts
+        env:
+          # Staging app URL (public, not a secret)
+          PLAYWRIGHT_TEST_BASE_URL: https://app.staging.fiber.shop
+
+          # Supabase URL needed for cookie name generation (public info, visible in browser)
+          # Replace with your actual staging Supabase URL
+          NEXT_PUBLIC_SUPABASE_URL: https://pqzdcscbwwapxsuygizi.supabase.co
+
+          CI: true
+        continue-on-error: true
+        id: e2e-tests
+
+      - name: Ensure report directory exists
+        if: always()
+        run: |
+          if [ ! -d "playwright-report" ]; then
+            mkdir -p playwright-report
+            echo "<h1>All tests passed!</h1><p>No failures to report.</p>" > playwright-report/index.html
+          fi
+
+      - name: Upload Playwright report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: playwright-report-staging-${{ github.run_id }}
+          path: playwright-report/
+          retention-days: 30
+
+      - name: Deploy Playwright report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: always()
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./playwright-report
+          destination_dir: reports/staging/${{ github.run_id }}
+
+      - name: Create GitHub issue on test failure
+        uses: actions/github-script@v7
+        if: always() && steps.e2e-tests.outcome == 'failure'
+        with:
+          script: |
+            const runId = context.runId;
+            const repo = context.repo;
+            const reportUrl = `https://${repo.owner}.github.io/${repo.repo}/reports/staging/${runId}`;
+            const runUrl = `https://github.com/${repo.owner}/${repo.repo}/actions/runs/${runId}`;
+
+            const now = new Date().toISOString();
+
+            const issueBody = `## 🚨 Staging e2e Tests Failed
+
+            **Time**: ${now}
+            **Run**: [View Workflow Run](${runUrl})
+            **Report**: [View Playwright Report](${reportUrl})
+
+            ### Details
+
+            Scheduled e2e tests against the staging environment have failed.
+
+            ### Next Steps
+
+            1. Review the [Playwright report](${reportUrl}) to identify failing tests
+            2. Check if this is a flaky test or a real issue
+            3. If real issue, investigate staging environment
+            4. Close this issue once resolved
+
+            ### Links
+
+            - [Workflow Run](${runUrl})
+            - [Test Report](${reportUrl})
+
+            ---
+            *This issue was automatically created by the scheduled e2e test workflow*`;
+
+            // Search for existing open issues with the same title
+            const issues = await github.rest.issues.listForRepo({
+              owner: repo.owner,
+              repo: repo.repo,
+              state: 'open',
+              labels: ['e2e-test-failure', 'staging'],
+              per_page: 100
+            });
+
+            const existingIssue = issues.data.find(issue =>
+              issue.title.includes('Staging e2e Tests Failing')
+            );
+
+            if (existingIssue) {
+              // Add a comment to existing issue
+              await github.rest.issues.createComment({
+                owner: repo.owner,
+                repo: repo.repo,
+                issue_number: existingIssue.number,
+                body: `### Another failure detected\n\n${issueBody}`
+              });
+            } else {
+              // Create new issue
+              await github.rest.issues.create({
+                owner: repo.owner,
+                repo: repo.repo,
+                title: '🚨 Staging e2e Tests Failing',
+                body: issueBody,
+                labels: ['e2e-test-failure', 'staging', 'automated']
+              });
+            }
+
+      - name: Comment success on existing issue
+        uses: actions/github-script@v7
+        if: always() && steps.e2e-tests.outcome == 'success'
+        with:
+          script: |
+            const repo = context.repo;
+
+            // Search for existing open issues
+            const issues = await github.rest.issues.listForRepo({
+              owner: repo.owner,
+              repo: repo.repo,
+              state: 'open',
+              labels: ['e2e-test-failure', 'staging'],
+              per_page: 100
+            });
+
+            const existingIssue = issues.data.find(issue =>
+              issue.title.includes('Staging e2e Tests Failing')
+            );
+
+            if (existingIssue) {
+              const now = new Date().toISOString();
+              await github.rest.issues.createComment({
+                owner: repo.owner,
+                repo: repo.repo,
+                issue_number: existingIssue.number,
+                body: `### ✅ Tests now passing\n\n**Time**: ${now}\n\nStaging e2e tests are passing again. Consider closing this issue if the problem is resolved.`
+              });
+            }

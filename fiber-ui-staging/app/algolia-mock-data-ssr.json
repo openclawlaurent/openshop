@@ -1,0 +1,3591 @@
+{
+  "timestamp": "2025-09-20T14:47:39.639Z",
+  "query": "",
+  "searchResponse": {
+    "hits": [
+      {
+        "merchantId": 5475228,
+        "merchantName": "AliExpress",
+        "merchantScore": 0.9,
+        "imageUrl": "https://storage.googleapis.com/wl-image/b3d1408a9ad4cea736abdec2341f472e4740225b",
+        "domain": "aliexpress.us",
+        "isPriority": false,
+        "categoryIds": [
+          74, 22, 45, 70, 29, 17, 1, 5, 44, 73, 3, 71, 28, 33, 256, 186, 242, 195, 9, 11, 60, 20,
+          191, 6, 35, 34, 84, 15, 30, 213, 278, 62, 24, 238, 245, 77, 85, 115, 130, 188, 80, 132,
+          79, 82, 138, 181, 334, 48, 112, 118, 187, 105, 43, 136, 179, 250, 107, 114, 119, 126, 248,
+          257, 81, 94, 134, 185, 189, 198, 104, 135, 10, 128, 113, 47, 72, 116, 131, 41, 49, 78,
+          102, 239, 98, 127, 259, 76
+        ],
+        "primaryCategoryId": 33,
+        "searchKeywords": [
+          "aliexpress",
+          "handbags & wallets",
+          "health & beauty",
+          "accessories",
+          "jewelry",
+          "computers & accessories",
+          "consumer electronics",
+          "clothing & apparel",
+          "toys & games",
+          "baby & kids",
+          "watches",
+          "vehicles & parts",
+          "shoes",
+          "household",
+          "department stores",
+          "motor vehicle parts",
+          "furniture",
+          "toys",
+          "yard & garden",
+          "office",
+          "arts & entertainment",
+          "baby toys & activity equipment",
+          "hardware",
+          "bed & bath",
+          "animals & pet supplies",
+          "holidays & occasions",
+          "babies & kids",
+          "party supplies",
+          "sporting goods",
+          "luggage & bags",
+          "outdoor recreation",
+          "weddings",
+          "diapering",
+          "b2b",
+          "card games",
+          "dolls, playsets & toy figures",
+          "swimwear",
+          "hobbies & creative arts",
+          "laptop accessories",
+          "audio",
+          "kitchen & dining",
+          "juniors",
+          "electronics accessories",
+          "petite",
+          "televisions",
+          "personal care",
+          "sex toys",
+          "men",
+          "computer accessories",
+          "smart watches",
+          "home decor",
+          "networking products",
+          "dog supplies",
+          "projectors",
+          "beauty & cosmetics",
+          "building toys",
+          "external components",
+          "video",
+          "remote control toys",
+          "motor vehicle electronics",
+          "plus",
+          "arts & crafts",
+          "cameras",
+          "tools",
+          "lighting",
+          "outdoor living",
+          "data storage",
+          "camera & optic accessories",
+          "erotic",
+          "camera & optics",
+          "computer components",
+          "costumes",
+          "sunglasses",
+          "tablet accessories",
+          "video game consoles & games",
+          "cat supplies",
+          "women",
+          "underwear & socks",
+          "tablets",
+          "video games",
+          "laptops",
+          "smart home devices",
+          "vehicle maintenance, care & decor",
+          "aliexpress.com"
+        ],
+        "countries": [
+          "DK",
+          "ES",
+          "IT",
+          "NL",
+          "SE",
+          "GB",
+          "PR",
+          "US",
+          "DE",
+          "BR",
+          "AR",
+          "CL",
+          "CO",
+          "MX",
+          "PE"
+        ],
+        "paysNewCustomersOnly": false,
+        "shareAndEarnDisabled": false,
+        "serpInjectionDisabled": false,
+        "browserExtensionDisabled": false,
+        "allRates": [
+          {
+            "kind": "PERCENTAGE",
+            "name": "20.00% Online Purchase",
+            "amount": "13",
+            "numeric_amount": 13
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "20.00% Selected Goods",
+            "amount": "13",
+            "numeric_amount": 13
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "10.00% Selected Goods",
+            "amount": "6.5",
+            "numeric_amount": 6.5
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Apparel, Accessories, and Decor",
+            "amount": "5.2",
+            "numeric_amount": 5.2
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Online Purchase",
+            "amount": "3.9",
+            "numeric_amount": 3.9
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Tech Products",
+            "amount": "1.95",
+            "numeric_amount": 1.95
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "0.00% Selected Goods",
+            "amount": "0",
+            "numeric_amount": 0
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Reseller, dropshipper, or non-commissionable products",
+            "amount": "0",
+            "numeric_amount": 0
+          }
+        ],
+        "lastUpdated": "2025-09-18T00:00:01.664Z",
+        "objectID": "merchant_5475228_3280",
+        "_snippetResult": {
+          "merchantName": {
+            "value": "AliExpress",
+            "matchLevel": "none"
+          }
+        },
+        "_highlightResult": {
+          "merchantName": {
+            "value": "AliExpress",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "searchKeywords": [
+            {
+              "value": "aliexpress",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "handbags & wallets",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "health & beauty",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "accessories",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "jewelry",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "computers & accessories",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "consumer electronics",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "clothing & apparel",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "toys & games",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "baby & kids",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "watches",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "vehicles & parts",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "shoes",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "household",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "department stores",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "motor vehicle parts",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "furniture",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "toys",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "yard & garden",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "office",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "arts & entertainment",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "baby toys & activity equipment",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "hardware",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "bed & bath",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "animals & pet supplies",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "holidays & occasions",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "babies & kids",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "party supplies",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "sporting goods",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "luggage & bags",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "outdoor recreation",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "weddings",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "diapering",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "b2b",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "card games",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "dolls, playsets & toy figures",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "swimwear",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "hobbies & creative arts",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "laptop accessories",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "audio",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "kitchen & dining",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "juniors",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "electronics accessories",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "petite",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "televisions",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "personal care",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "sex toys",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "men",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "computer accessories",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "smart watches",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "home decor",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "networking products",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "dog supplies",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "projectors",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "beauty & cosmetics",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "building toys",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "external components",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "video",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "remote control toys",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "motor vehicle electronics",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "plus",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "arts & crafts",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "cameras",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "tools",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "lighting",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "outdoor living",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "data storage",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "camera & optic accessories",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "erotic",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "camera & optics",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "computer components",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "costumes",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "sunglasses",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "tablet accessories",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "video game consoles & games",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "cat supplies",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "women",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "underwear & socks",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "tablets",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "video games",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "laptops",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "smart home devices",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "vehicle maintenance, care & decor",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "aliexpress.com",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          ]
+        },
+        "maxRateAmount": 13,
+        "maxRateType": "percentage"
+      },
+      {
+        "merchantId": 5479801,
+        "merchantName": "Lowe's",
+        "merchantScore": 0.8,
+        "imageUrl": "https://storage.googleapis.com/wl-image/a56f7c189e400973309992a15304b1ef60f0158b",
+        "domain": "lowes.com",
+        "isPriority": false,
+        "categoryIds": [
+          184, 185, 20, 9, 206, 192, 194, 28, 187, 193, 195, 189, 197, 234, 3, 191, 213, 14, 17, 5,
+          240, 186, 24, 190, 188, 57, 344, 198, 30, 127, 15
+        ],
+        "primaryCategoryId": 20,
+        "searchKeywords": [
+          "lowe's",
+          "building supplies",
+          "tools",
+          "hardware",
+          "office",
+          "furniture",
+          "storage and organization",
+          "appliances",
+          "household",
+          "home decor",
+          "supplies",
+          "yard & garden",
+          "lighting",
+          "lawn & garden",
+          "golf",
+          "vehicles & parts",
+          "bed & bath",
+          "outdoor recreation",
+          "group discount",
+          "consumer electronics",
+          "toys & games",
+          "outdoor play equipment",
+          "b2b",
+          "rugs & flooring",
+          "kitchen & dining",
+          "food service",
+          "military discount",
+          "outdoor living",
+          "luggage & bags",
+          "smart home devices",
+          "sporting goods",
+          "lowes.com",
+          "lowes"
+        ],
+        "countries": ["US"],
+        "paysNewCustomersOnly": false,
+        "shareAndEarnDisabled": false,
+        "serpInjectionDisabled": false,
+        "browserExtensionDisabled": false,
+        "allRates": [
+          {
+            "kind": "PERCENTAGE",
+            "name": "Flooring",
+            "amount": "2.6",
+            "numeric_amount": 2.6
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Seasonal & Outdoor Living",
+            "amount": "2.6",
+            "numeric_amount": 2.6
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Lawn & Garden",
+            "amount": "2.6",
+            "numeric_amount": 2.6
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Paint Purchase",
+            "amount": "2.6",
+            "numeric_amount": 2.6
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "All Other Online Purchases (No Cashback on Lumber or Giftcards)",
+            "amount": "2.275",
+            "numeric_amount": 2.275
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Appliances",
+            "amount": "0.65",
+            "numeric_amount": 0.65
+          }
+        ],
+        "lastUpdated": "2025-09-18T00:00:02.246Z",
+        "objectID": "merchant_5479801_4119",
+        "_snippetResult": {
+          "merchantName": {
+            "value": "Lowe's",
+            "matchLevel": "none"
+          }
+        },
+        "_highlightResult": {
+          "merchantName": {
+            "value": "Lowe's",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "searchKeywords": [
+            {
+              "value": "lowe's",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "building supplies",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "tools",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "hardware",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "office",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "furniture",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "storage and organization",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "appliances",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "household",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "home decor",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "supplies",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "yard & garden",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "lighting",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "lawn & garden",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "golf",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "vehicles & parts",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "bed & bath",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "outdoor recreation",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "group discount",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "consumer electronics",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "toys & games",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "outdoor play equipment",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "b2b",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "rugs & flooring",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "kitchen & dining",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "food service",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "military discount",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "outdoor living",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "luggage & bags",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "smart home devices",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "sporting goods",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "lowes.com",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "lowes",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          ]
+        },
+        "maxRateAmount": 2.6,
+        "maxRateType": "percentage"
+      },
+      {
+        "merchantId": 5479397,
+        "merchantName": "Kohl's",
+        "merchantScore": 0.8,
+        "imageUrl": "https://storage.googleapis.com/wl-image/967b9637adb3a589944169f1a429a0bbb889ec99",
+        "domain": "kohls.com",
+        "isPriority": false,
+        "categoryIds": [
+          28, 70, 75, 43, 49, 6, 248, 178, 241, 191, 71, 30, 39, 82, 22, 96, 33, 34, 41, 247, 245,
+          15, 246, 45, 1, 5, 11, 186, 244, 68, 74, 44, 130, 17, 243, 242, 67, 37, 38, 48
+        ],
+        "primaryCategoryId": 33,
+        "searchKeywords": [
+          "kohl's",
+          "household",
+          "jewelry",
+          "big & tall",
+          "dog supplies",
+          "women",
+          "animals & pet supplies",
+          "remote control toys",
+          "fragrance & cologne",
+          "puzzles",
+          "bed & bath",
+          "shoes",
+          "luggage & bags",
+          "charity",
+          "swimwear",
+          "health & beauty",
+          "school supplies",
+          "department stores",
+          "babies & kids",
+          "cat supplies",
+          "pretend play",
+          "dolls, playsets & toy figures",
+          "sporting goods",
+          "educational toys",
+          "accessories",
+          "clothing & apparel",
+          "toys & games",
+          "arts & entertainment",
+          "furniture",
+          "board games",
+          "belts",
+          "handbags & wallets",
+          "baby & kids",
+          "audio",
+          "consumer electronics",
+          "games",
+          "toys",
+          "hats",
+          "curbside pickup",
+          "education",
+          "men",
+          "kohls.com",
+          "kohls"
+        ],
+        "countries": ["US"],
+        "paysNewCustomersOnly": false,
+        "shareAndEarnDisabled": false,
+        "serpInjectionDisabled": false,
+        "browserExtensionDisabled": false,
+        "allRates": [
+          {
+            "kind": "PERCENTAGE",
+            "name": "Online Purchase",
+            "amount": "0.65",
+            "numeric_amount": 0.65
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Kohl's Cares Products or orders paid for with Kohl's Cash",
+            "amount": "0",
+            "numeric_amount": 0
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Jewelry Item Purchase total more than $2k",
+            "amount": "0",
+            "numeric_amount": 0
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Gift Cards",
+            "amount": "0",
+            "numeric_amount": 0
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Gaming Products",
+            "amount": "0",
+            "numeric_amount": 0
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Crocs",
+            "amount": "0",
+            "numeric_amount": 0
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Nintendo Products",
+            "amount": "0",
+            "numeric_amount": 0
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "JLab Products",
+            "amount": "0",
+            "numeric_amount": 0
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Beats Products",
+            "amount": "0",
+            "numeric_amount": 0
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Apple Products",
+            "amount": "0",
+            "numeric_amount": 0
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Amazon Products",
+            "amount": "0",
+            "numeric_amount": 0
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "BISSELL Products",
+            "amount": "0",
+            "numeric_amount": 0
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Google Products",
+            "amount": "0",
+            "numeric_amount": 0
+          }
+        ],
+        "lastUpdated": "2025-09-18T00:00:02.246Z",
+        "objectID": "merchant_5479397_4067",
+        "_snippetResult": {
+          "merchantName": {
+            "value": "Kohl's",
+            "matchLevel": "none"
+          }
+        },
+        "_highlightResult": {
+          "merchantName": {
+            "value": "Kohl's",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "searchKeywords": [
+            {
+              "value": "kohl's",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "household",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "jewelry",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "big & tall",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "dog supplies",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "women",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "animals & pet supplies",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "remote control toys",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "fragrance & cologne",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "puzzles",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "bed & bath",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "shoes",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "luggage & bags",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "charity",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "swimwear",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "health & beauty",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "school supplies",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "department stores",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "babies & kids",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "cat supplies",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "pretend play",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "dolls, playsets & toy figures",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "sporting goods",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "educational toys",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "accessories",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "clothing & apparel",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "toys & games",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "arts & entertainment",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "furniture",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "board games",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "belts",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "handbags & wallets",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "baby & kids",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "audio",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "consumer electronics",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "games",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "toys",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "hats",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "curbside pickup",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "education",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "men",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "kohls.com",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "kohls",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          ]
+        },
+        "maxRateAmount": 0.65,
+        "maxRateType": "percentage"
+      },
+      {
+        "merchantId": 5483529,
+        "merchantName": "Udemy",
+        "merchantScore": 0.6,
+        "imageUrl": "https://storage.googleapis.com/wl-image/464dd2ebe00d790f7ad7252df42b7fd294e431da",
+        "domain": "udemy.com",
+        "isPriority": false,
+        "categoryIds": [97, 38, 95, 100, 35, 29, 24],
+        "primaryCategoryId": 95,
+        "searchKeywords": [
+          "udemy",
+          "college",
+          "education",
+          "online courses",
+          "software",
+          "holidays & occasions",
+          "computers & accessories",
+          "b2b",
+          "udemy.com"
+        ],
+        "countries": [
+          "PR",
+          "US",
+          "CN",
+          "JP",
+          "KR",
+          "VN",
+          "TH",
+          "TR",
+          "BR",
+          "AU",
+          "IN",
+          "ID",
+          "GB",
+          "AT",
+          "BE",
+          "BG",
+          "HR",
+          "CY",
+          "CZ",
+          "DK",
+          "EE",
+          "FI",
+          "FR",
+          "DE",
+          "GR",
+          "HU",
+          "IE",
+          "IT",
+          "LV",
+          "LT",
+          "LU",
+          "MT",
+          "NL",
+          "PL",
+          "PT",
+          "RO",
+          "SK",
+          "SI",
+          "ES",
+          "SE",
+          "BD",
+          "BT",
+          "IO",
+          "SB",
+          "BN",
+          "MM",
+          "KH",
+          "LK",
+          "TW",
+          "CX",
+          "CC",
+          "CK",
+          "FJ",
+          "PF",
+          "KI",
+          "GU",
+          "HK",
+          "LA",
+          "MO",
+          "MY",
+          "MV",
+          "MN",
+          "NR",
+          "NP",
+          "NC",
+          "VU",
+          "NZ",
+          "NU",
+          "NF",
+          "MP",
+          "FM",
+          "MH",
+          "PW",
+          "PK",
+          "PG",
+          "PH",
+          "PN",
+          "TL",
+          "RU",
+          "SG",
+          "TK",
+          "TO",
+          "TV",
+          "WF",
+          "WS",
+          "AL",
+          "AD",
+          "BA",
+          "BY",
+          "VA",
+          "IS",
+          "LI",
+          "MC",
+          "MD",
+          "ME",
+          "NO",
+          "SM",
+          "RS",
+          "CH",
+          "UA",
+          "MK",
+          "XK"
+        ],
+        "paysNewCustomersOnly": false,
+        "shareAndEarnDisabled": false,
+        "serpInjectionDisabled": false,
+        "browserExtensionDisabled": false,
+        "allRates": [
+          {
+            "kind": "PERCENTAGE",
+            "name": "Online Purchase",
+            "amount": "17.55",
+            "numeric_amount": 17.55
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Personal Plan Conversion",
+            "amount": "13",
+            "numeric_amount": 13
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Team Plan, Gift Card, or Demo Request",
+            "amount": "0",
+            "numeric_amount": 0
+          }
+        ],
+        "lastUpdated": "2025-09-18T00:00:02.246Z",
+        "objectID": "merchant_5483529_4599",
+        "_snippetResult": {
+          "merchantName": {
+            "value": "Udemy",
+            "matchLevel": "none"
+          }
+        },
+        "_highlightResult": {
+          "merchantName": {
+            "value": "Udemy",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "searchKeywords": [
+            {
+              "value": "udemy",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "college",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "education",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "online courses",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "software",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "holidays & occasions",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "computers & accessories",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "b2b",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "udemy.com",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          ]
+        },
+        "maxRateAmount": 17.55,
+        "maxRateType": "percentage"
+      },
+      {
+        "merchantId": 5479868,
+        "merchantName": "Macy's",
+        "merchantScore": 0.6,
+        "imageUrl": "https://storage.googleapis.com/wl-image/bcc59e7cfbf5a92d0db8e44f31c61292539d0046",
+        "domain": "macys.com",
+        "isPriority": false,
+        "categoryIds": [
+          49, 45, 9, 189, 44, 28, 30, 38, 190, 78, 17, 34, 79, 18, 194, 76, 33, 186, 35, 12, 71, 72,
+          191, 278, 80, 1, 96, 22, 48, 5, 70, 205, 81, 188, 242, 247, 246, 250, 195, 118
+        ],
+        "primaryCategoryId": 33,
+        "searchKeywords": [
+          "macy's",
+          "women",
+          "accessories",
+          "office",
+          "lighting",
+          "baby & kids",
+          "household",
+          "luggage & bags",
+          "education",
+          "rugs & flooring",
+          "underwear & socks",
+          "consumer electronics",
+          "babies & kids",
+          "petite",
+          "food & gourmet",
+          "appliances",
+          "department stores",
+          "furniture",
+          "holidays & occasions",
+          "gifts",
+          "shoes",
+          "sunglasses",
+          "bed & bath",
+          "weddings",
+          "juniors",
+          "clothing & apparel",
+          "school supplies",
+          "health & beauty",
+          "men",
+          "toys & games",
+          "jewelry",
+          "supplies",
+          "plus",
+          "kitchen & dining",
+          "toys",
+          "pretend play",
+          "educational toys",
+          "building toys",
+          "yard & garden",
+          "smart watches",
+          "macys.com",
+          "macys"
+        ],
+        "countries": ["PR", "US", "CA", "AU", "IO", "CN", "ID"],
+        "paysNewCustomersOnly": false,
+        "shareAndEarnDisabled": false,
+        "serpInjectionDisabled": false,
+        "browserExtensionDisabled": false,
+        "allRates": [
+          {
+            "kind": "PERCENTAGE",
+            "name": "Flash sale Jewelry Purchase",
+            "amount": "3.9",
+            "numeric_amount": 3.9
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Toys Flash Sale Registry Purchase",
+            "amount": "3.9",
+            "numeric_amount": 3.9
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Jewelry Flash Sale Registry Purchase",
+            "amount": "3.9",
+            "numeric_amount": 3.9
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Ready To wear Purchase",
+            "amount": "3.9",
+            "numeric_amount": 3.9
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Luggage Purchase",
+            "amount": "3.9",
+            "numeric_amount": 3.9
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Flash Sale Toy Purchase",
+            "amount": "3.9",
+            "numeric_amount": 3.9
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Ready to wear Registry Purchase",
+            "amount": "3.9",
+            "numeric_amount": 3.9
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Luggage Registry Purchase",
+            "amount": "3.9",
+            "numeric_amount": 3.9
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Registry Item Purchase.",
+            "amount": "3.25",
+            "numeric_amount": 3.25
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Online Purchase outside of the exceptions as outlined, marketplace.macys.com purchase not included",
+            "amount": "3.25",
+            "numeric_amount": 3.25
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Furniture, Mattresses, Box Springs, Recliners, Lighting and Wall Decor",
+            "amount": "1.95",
+            "numeric_amount": 1.95
+          },
+          {
+            "kind": "FLAT",
+            "name": "Electronics and Items shipped and sold by Marketplace (third party sellers as indicated on the product page)",
+            "amount": "0",
+            "numeric_amount": 0
+          },
+          {
+            "kind": "FLAT",
+            "name": "Orders placed through macyswineshop.com, gift certificates, gift cards, books, leased brand Items, Health/Fitness, adjustments, reorders, corporate gift cards, orders made by Macy’s employees, Rugs, S",
+            "amount": "0",
+            "numeric_amount": 0
+          }
+        ],
+        "lastUpdated": "2025-09-18T00:00:02.246Z",
+        "objectID": "merchant_5479868_4127",
+        "_snippetResult": {
+          "merchantName": {
+            "value": "Macy's",
+            "matchLevel": "none"
+          }
+        },
+        "_highlightResult": {
+          "merchantName": {
+            "value": "Macy's",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "searchKeywords": [
+            {
+              "value": "macy's",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "women",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "accessories",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "office",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "lighting",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "baby & kids",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "household",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "luggage & bags",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "education",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "rugs & flooring",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "underwear & socks",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "consumer electronics",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "babies & kids",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "petite",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "food & gourmet",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "appliances",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "department stores",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "furniture",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "holidays & occasions",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "gifts",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "shoes",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "sunglasses",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "bed & bath",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "weddings",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "juniors",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "clothing & apparel",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "school supplies",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "health & beauty",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "men",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "toys & games",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "jewelry",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "supplies",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "plus",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "kitchen & dining",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "toys",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "pretend play",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "educational toys",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "building toys",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "yard & garden",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "smart watches",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "macys.com",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "macys",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          ]
+        },
+        "maxRateAmount": 3.9,
+        "maxRateType": "percentage"
+      },
+      {
+        "merchantId": 129699,
+        "merchantName": "GOG",
+        "merchantScore": 0.6,
+        "imageUrl": "https://storage.googleapis.com/wl-image/01d2d91a2a514cd885a8d5878b1703925aae1f32",
+        "domain": "gog.com",
+        "isPriority": false,
+        "categoryIds": [239, 131, 5, 17, 100, 29],
+        "primaryCategoryId": 239,
+        "searchKeywords": [
+          "gog",
+          "video games",
+          "video game consoles & games",
+          "toys & games",
+          "consumer electronics",
+          "software",
+          "computers & accessories",
+          "gog.com"
+        ],
+        "countries": ["US"],
+        "paysNewCustomersOnly": false,
+        "shareAndEarnDisabled": false,
+        "serpInjectionDisabled": false,
+        "browserExtensionDisabled": false,
+        "allRates": [
+          {
+            "kind": "PERCENTAGE",
+            "name": "Online Purchase",
+            "amount": "3.9",
+            "numeric_amount": 3.9
+          }
+        ],
+        "lastUpdated": "2025-09-18T00:00:02.246Z",
+        "objectID": "merchant_129699_2142",
+        "_snippetResult": {
+          "merchantName": {
+            "value": "GOG",
+            "matchLevel": "none"
+          }
+        },
+        "_highlightResult": {
+          "merchantName": {
+            "value": "GOG",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "searchKeywords": [
+            {
+              "value": "gog",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "video games",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "video game consoles & games",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "toys & games",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "consumer electronics",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "software",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "computers & accessories",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "gog.com",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          ]
+        },
+        "maxRateAmount": 3.9,
+        "maxRateType": "percentage"
+      },
+      {
+        "merchantId": 5482694,
+        "merchantName": "StubHub",
+        "merchantScore": 0.6,
+        "imageUrl": "https://storage.googleapis.com/wl-image/a09fe2eaa426a89207bce25b9fa45f88fff88c71",
+        "domain": "stubhub.ie",
+        "isPriority": false,
+        "categoryIds": [86, 87, 88, 90, 91, 11, 223, 15, 212],
+        "primaryCategoryId": 86,
+        "searchKeywords": [
+          "stubhub",
+          "event tickets",
+          "amusement & theme parks",
+          "concerts",
+          "sporting events",
+          "theatre",
+          "arts & entertainment",
+          "football",
+          "sporting goods",
+          "athletics",
+          "stubhub.com"
+        ],
+        "countries": ["US", "CA", "IE", "PR", "MX"],
+        "paysNewCustomersOnly": false,
+        "shareAndEarnDisabled": false,
+        "serpInjectionDisabled": false,
+        "browserExtensionDisabled": false,
+        "allRates": [
+          {
+            "kind": "PERCENTAGE",
+            "name": "Ticket Purchase (Excluding Gift Cards, Ticket Insurance, or non-Ticket Merchandise)",
+            "amount": "3.25",
+            "numeric_amount": 3.25
+          }
+        ],
+        "lastUpdated": "2025-09-18T00:00:02.246Z",
+        "objectID": "merchant_5482694_4474",
+        "_snippetResult": {
+          "merchantName": {
+            "value": "StubHub",
+            "matchLevel": "none"
+          }
+        },
+        "_highlightResult": {
+          "merchantName": {
+            "value": "StubHub",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "searchKeywords": [
+            {
+              "value": "stubhub",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "event tickets",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "amusement & theme parks",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "concerts",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "sporting events",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "theatre",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "arts & entertainment",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "football",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "sporting goods",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "athletics",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "stubhub.com",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          ]
+        },
+        "maxRateAmount": 3.25,
+        "maxRateType": "percentage"
+      },
+      {
+        "merchantId": 5478893,
+        "merchantName": "IHG",
+        "merchantScore": 0.6,
+        "imageUrl": "https://storage.googleapis.com/wl-image/08bd60db568459f4579edc36ee2f4f13a9d43515",
+        "domain": "ihg.com",
+        "isPriority": false,
+        "categoryIds": [254, 4],
+        "primaryCategoryId": 254,
+        "searchKeywords": ["ihg", "hotel", "travel", "ihg.com"],
+        "countries": [
+          "AU",
+          "CN",
+          "TW",
+          "ET",
+          "HK",
+          "IN",
+          "ID",
+          "JP",
+          "KZ",
+          "KE",
+          "KR",
+          "OM",
+          "NP",
+          "NZ",
+          "NG",
+          "PH",
+          "SA",
+          "SG",
+          "ZA",
+          "TH",
+          "AE",
+          "YE",
+          "AL",
+          "AD",
+          "AT",
+          "BE",
+          "BA",
+          "BG",
+          "BY",
+          "HR",
+          "CY",
+          "CZ",
+          "DK",
+          "EE",
+          "FI",
+          "FR",
+          "DE",
+          "GR",
+          "VA",
+          "HU",
+          "IS",
+          "IE",
+          "IT",
+          "LV",
+          "LI",
+          "LT",
+          "LU",
+          "MT",
+          "MC",
+          "MD",
+          "ME",
+          "NL",
+          "NO",
+          "PL",
+          "PT",
+          "RO",
+          "SM",
+          "RS",
+          "SK",
+          "SI",
+          "ES",
+          "SE",
+          "CH",
+          "MK",
+          "GB",
+          "XK",
+          "CA",
+          "MX",
+          "US"
+        ],
+        "paysNewCustomersOnly": false,
+        "shareAndEarnDisabled": false,
+        "serpInjectionDisabled": false,
+        "browserExtensionDisabled": false,
+        "allRates": [
+          {
+            "kind": "PERCENTAGE",
+            "name": "Online Booking",
+            "amount": "2.6",
+            "numeric_amount": 2.6
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Iberostar Properties Booking",
+            "amount": "2.6",
+            "numeric_amount": 2.6
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Kimpton Booking",
+            "amount": "0",
+            "numeric_amount": 0
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Booking in Russia or Ukraine",
+            "amount": "0",
+            "numeric_amount": 0
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Temporarily Closed Hotel Booking",
+            "amount": "0",
+            "numeric_amount": 0
+          },
+          {
+            "kind": "FLAT",
+            "name": "App Install",
+            "amount": "0",
+            "numeric_amount": 0
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Mr. and Mrs. Smith, Military Property, and Six Senses Bookings",
+            "amount": "0",
+            "numeric_amount": 0
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Employee Purchase, Friends and Family Purchase, Rewards Night, Chase Free Night, and Groups and Meetings Purchase",
+            "amount": "0",
+            "numeric_amount": 0
+          }
+        ],
+        "lastUpdated": "2025-09-18T00:00:02.246Z",
+        "objectID": "merchant_5478893_4010",
+        "_snippetResult": {
+          "merchantName": {
+            "value": "IHG",
+            "matchLevel": "none"
+          }
+        },
+        "_highlightResult": {
+          "merchantName": {
+            "value": "IHG",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "searchKeywords": [
+            {
+              "value": "ihg",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "hotel",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "travel",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "ihg.com",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          ]
+        },
+        "maxRateAmount": 2.6,
+        "maxRateType": "percentage"
+      },
+      {
+        "merchantId": 157090,
+        "merchantName": "SKIMS",
+        "merchantScore": 0.6,
+        "imageUrl": "https://storage.googleapis.com/wl-image/809aaf5845a6360666386bc6efcf434dfe729b30",
+        "domain": "skims.com",
+        "isPriority": false,
+        "categoryIds": [1],
+        "primaryCategoryId": 1,
+        "searchKeywords": ["skims", "clothing & apparel", "skims.com"],
+        "countries": ["US"],
+        "paysNewCustomersOnly": false,
+        "shareAndEarnDisabled": false,
+        "serpInjectionDisabled": false,
+        "browserExtensionDisabled": false,
+        "allRates": [
+          {
+            "kind": "PERCENTAGE",
+            "name": "Online Purchase",
+            "amount": "2.6",
+            "numeric_amount": 2.6
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Sale Item Purchase",
+            "amount": "0",
+            "numeric_amount": 0
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Dolce & Gabbana",
+            "amount": "0",
+            "numeric_amount": 0
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Item Discount Greater than $1",
+            "amount": "0",
+            "numeric_amount": 0
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Roberto Cavalli Products",
+            "amount": "0",
+            "numeric_amount": 0
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Gift Cards or Purchase with Promo Code",
+            "amount": "0",
+            "numeric_amount": 0
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "REALTREE Purchase",
+            "amount": "0",
+            "numeric_amount": 0
+          }
+        ],
+        "lastUpdated": "2025-09-18T00:00:02.246Z",
+        "objectID": "merchant_157090_2647",
+        "_snippetResult": {
+          "merchantName": {
+            "value": "SKIMS",
+            "matchLevel": "none"
+          }
+        },
+        "_highlightResult": {
+          "merchantName": {
+            "value": "SKIMS",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "searchKeywords": [
+            {
+              "value": "skims",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "clothing & apparel",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "skims.com",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          ]
+        },
+        "maxRateAmount": 2.6,
+        "maxRateType": "percentage"
+      },
+      {
+        "merchantId": 5478068,
+        "merchantName": "G2A",
+        "merchantScore": 0.6,
+        "imageUrl": "https://storage.googleapis.com/wl-image/5fa7bcf0bb1c48a09a14975017d4ef52c390a4a5",
+        "domain": "g2a.com",
+        "isPriority": false,
+        "categoryIds": [29, 112, 17, 239, 74, 5, 107, 131],
+        "primaryCategoryId": 239,
+        "searchKeywords": [
+          "g2a",
+          "computers & accessories",
+          "computer accessories",
+          "consumer electronics",
+          "video games",
+          "handbags & wallets",
+          "toys & games",
+          "accessories",
+          "video game consoles & games",
+          "g2a.com"
+        ],
+        "countries": ["ES", "US", "GB", "DE", "PL", "AU", "AE"],
+        "paysNewCustomersOnly": false,
+        "shareAndEarnDisabled": false,
+        "serpInjectionDisabled": false,
+        "browserExtensionDisabled": false,
+        "allRates": [
+          {
+            "kind": "PERCENTAGE",
+            "name": "Online Purchase",
+            "amount": "1.3",
+            "numeric_amount": 1.3
+          }
+        ],
+        "lastUpdated": "2025-09-18T00:00:02.246Z",
+        "objectID": "merchant_5478068_3920",
+        "_snippetResult": {
+          "merchantName": {
+            "value": "G2A",
+            "matchLevel": "none"
+          }
+        },
+        "_highlightResult": {
+          "merchantName": {
+            "value": "G2A",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "searchKeywords": [
+            {
+              "value": "g2a",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "computers & accessories",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "computer accessories",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "consumer electronics",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "video games",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "handbags & wallets",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "toys & games",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "accessories",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "video game consoles & games",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "g2a.com",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          ]
+        },
+        "maxRateAmount": 1.3,
+        "maxRateType": "percentage"
+      },
+      {
+        "merchantId": 81641,
+        "merchantName": "SEMrush",
+        "merchantScore": 0.5,
+        "imageUrl": "https://storage.googleapis.com/wl-image/2eea5cc59caae9dede61eab717003a44832e2df4",
+        "domain": "semrush.com",
+        "isPriority": false,
+        "categoryIds": [54, 95, 38, 31, 24, 202],
+        "primaryCategoryId": 54,
+        "searchKeywords": [
+          "semrush",
+          "advertising & marketing",
+          "online courses",
+          "education",
+          "media",
+          "b2b",
+          "books & magazines",
+          "semrush.com"
+        ],
+        "countries": [
+          "AU",
+          "AT",
+          "BE",
+          "BR",
+          "CA",
+          "CL",
+          "TW",
+          "HR",
+          "CY",
+          "CZ",
+          "DK",
+          "EE",
+          "FI",
+          "FR",
+          "DE",
+          "GR",
+          "GL",
+          "HK",
+          "HU",
+          "IS",
+          "IN",
+          "IE",
+          "IL",
+          "IT",
+          "JP",
+          "LV",
+          "LT",
+          "LU",
+          "MX",
+          "MC",
+          "ME",
+          "NL",
+          "NZ",
+          "PL",
+          "PT",
+          "PR",
+          "RO",
+          "RU",
+          "SG",
+          "SK",
+          "SI",
+          "ZA",
+          "SE",
+          "CH",
+          "TH",
+          "AE",
+          "TR",
+          "UA",
+          "GB",
+          "US"
+        ],
+        "paysNewCustomersOnly": false,
+        "shareAndEarnDisabled": false,
+        "serpInjectionDisabled": false,
+        "browserExtensionDisabled": true,
+        "allRates": [
+          {
+            "kind": "FLAT",
+            "name": "First Purchase (Excluding Gift Cards)\nPurchase of AdClarity: up to $120.00 per order\nPurchase of Influencer Analytics: up to  $120.00 per order\nPurchae of Semrush Social Content AI: up to $64.00 per o",
+            "amount": "227.5",
+            "numeric_amount": 227.5
+          },
+          {
+            "kind": "FLAT",
+            "name": "Trial",
+            "amount": "6.5",
+            "numeric_amount": 6.5
+          },
+          {
+            "kind": "FLAT",
+            "name": "App Center Access",
+            "amount": "0.65",
+            "numeric_amount": 0.65
+          },
+          {
+            "kind": "FLAT",
+            "name": "Registration",
+            "amount": "0.0065",
+            "numeric_amount": 0.0065
+          }
+        ],
+        "lastUpdated": "2025-09-18T00:00:02.246Z",
+        "objectID": "merchant_81641_638",
+        "_snippetResult": {
+          "merchantName": {
+            "value": "SEMrush",
+            "matchLevel": "none"
+          }
+        },
+        "_highlightResult": {
+          "merchantName": {
+            "value": "SEMrush",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "searchKeywords": [
+            {
+              "value": "semrush",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "advertising & marketing",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "online courses",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "education",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "media",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "b2b",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "books & magazines",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "semrush.com",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          ]
+        },
+        "maxRateAmount": 227.5,
+        "maxRateType": "fixed"
+      },
+      {
+        "merchantId": 146377,
+        "merchantName": "Temu",
+        "merchantScore": 0.5,
+        "imageUrl": "https://storage.googleapis.com/wl-image/5715029a6d3ac3d8bd68fd156b8e2f909decd772",
+        "domain": "temu.com",
+        "isPriority": false,
+        "categoryIds": [33],
+        "primaryCategoryId": 33,
+        "searchKeywords": ["temu", "department stores", "temu.com"],
+        "countries": [
+          "AU",
+          "AT",
+          "BE",
+          "CA",
+          "CZ",
+          "DK",
+          "FI",
+          "FR",
+          "DE",
+          "HU",
+          "IE",
+          "IT",
+          "JP",
+          "KR",
+          "MX",
+          "NL",
+          "NZ",
+          "NO",
+          "PL",
+          "PT",
+          "PR",
+          "RO",
+          "SK",
+          "ES",
+          "SE",
+          "CH",
+          "GB",
+          "US",
+          "SA",
+          "MY",
+          "PH",
+          "TH",
+          "BR",
+          "CL",
+          "CO",
+          "EC",
+          "PA",
+          "PE",
+          "BG",
+          "CR",
+          "HR",
+          "GE",
+          "IS",
+          "KW",
+          "LV",
+          "LT",
+          "LU",
+          "MA",
+          "VN",
+          "SI",
+          "ZA",
+          "TR",
+          "UA",
+          "UY",
+          "UZ"
+        ],
+        "paysNewCustomersOnly": false,
+        "shareAndEarnDisabled": false,
+        "serpInjectionDisabled": false,
+        "browserExtensionDisabled": true,
+        "allRates": [
+          {
+            "kind": "PERCENTAGE",
+            "name": "New Customer Online Purchase",
+            "amount": "19.5",
+            "numeric_amount": 19.5
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "New Customer In-App Purchase",
+            "amount": "19.5",
+            "numeric_amount": 19.5
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Returning Customer Online Purchase",
+            "amount": "3.25",
+            "numeric_amount": 3.25
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Returning Customer In-App Purchase",
+            "amount": "3.25",
+            "numeric_amount": 3.25
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Online Purchase from Referral Website or Purchase in Country  That Does not Earn Cashback",
+            "amount": "0",
+            "numeric_amount": 0
+          }
+        ],
+        "lastUpdated": "2025-09-18T00:00:02.246Z",
+        "objectID": "merchant_146377_2443",
+        "_snippetResult": {
+          "merchantName": {
+            "value": "Temu",
+            "matchLevel": "none"
+          }
+        },
+        "_highlightResult": {
+          "merchantName": {
+            "value": "Temu",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "searchKeywords": [
+            {
+              "value": "temu",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "department stores",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "temu.com",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          ]
+        },
+        "maxRateAmount": 19.5,
+        "maxRateType": "percentage"
+      },
+      {
+        "merchantId": 144360,
+        "merchantName": "Ancestry",
+        "merchantScore": 0.5,
+        "imageUrl": "https://storage.googleapis.com/wl-image/62ea7f637966ee20c988fbaabbed6d41099ec29a",
+        "domain": "ancestry.com",
+        "isPriority": false,
+        "categoryIds": [25, 11, 22, 177, 207],
+        "primaryCategoryId": 25,
+        "searchKeywords": [
+          "ancestry",
+          "consumer services",
+          "arts & entertainment",
+          "health & beauty",
+          "health care",
+          "internet services",
+          "ancestry.com"
+        ],
+        "countries": ["CA", "US", "DE", "AU", "GB", "PR"],
+        "paysNewCustomersOnly": false,
+        "shareAndEarnDisabled": false,
+        "serpInjectionDisabled": false,
+        "browserExtensionDisabled": false,
+        "allRates": [
+          {
+            "kind": "PERCENTAGE",
+            "name": "Online Purchase",
+            "amount": "11.7",
+            "numeric_amount": 11.7
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "ACOM Sign Up or Gift Cards",
+            "amount": "0",
+            "numeric_amount": 0
+          }
+        ],
+        "lastUpdated": "2025-09-18T00:00:02.246Z",
+        "objectID": "merchant_144360_2415",
+        "_snippetResult": {
+          "merchantName": {
+            "value": "Ancestry",
+            "matchLevel": "none"
+          }
+        },
+        "_highlightResult": {
+          "merchantName": {
+            "value": "Ancestry",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "searchKeywords": [
+            {
+              "value": "ancestry",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "consumer services",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "arts & entertainment",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "health & beauty",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "health care",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "internet services",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "ancestry.com",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          ]
+        },
+        "maxRateAmount": 11.7,
+        "maxRateType": "percentage"
+      },
+      {
+        "merchantId": 142901,
+        "merchantName": "CarGurus",
+        "merchantScore": 0.5,
+        "imageUrl": "https://storage.googleapis.com/wl-image/a47b939acbb5e61a936c7b7ee3eb0940b59bb498",
+        "domain": "cargurus.com",
+        "isPriority": false,
+        "categoryIds": [3],
+        "primaryCategoryId": 3,
+        "searchKeywords": ["cargurus", "vehicles & parts", "cargurus.com"],
+        "countries": ["US", "CA"],
+        "paysNewCustomersOnly": false,
+        "shareAndEarnDisabled": false,
+        "serpInjectionDisabled": false,
+        "browserExtensionDisabled": false,
+        "allRates": [
+          {
+            "kind": "FLAT",
+            "name": "Sell a Car",
+            "amount": "9.75",
+            "numeric_amount": 9.75
+          },
+          {
+            "kind": "FLAT",
+            "name": "Online Purchase",
+            "amount": "3.25",
+            "numeric_amount": 3.25
+          },
+          {
+            "kind": "FLAT",
+            "name": "Buy a Car",
+            "amount": "2.6",
+            "numeric_amount": 2.6
+          },
+          {
+            "kind": "FLAT",
+            "name": "Finance",
+            "amount": "1.625",
+            "numeric_amount": 1.625
+          }
+        ],
+        "lastUpdated": "2025-09-18T00:00:02.246Z",
+        "objectID": "merchant_142901_2409",
+        "_snippetResult": {
+          "merchantName": {
+            "value": "CarGurus",
+            "matchLevel": "none"
+          }
+        },
+        "_highlightResult": {
+          "merchantName": {
+            "value": "CarGurus",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "searchKeywords": [
+            {
+              "value": "cargurus",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "vehicles & parts",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "cargurus.com",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          ]
+        },
+        "maxRateAmount": 9.75,
+        "maxRateType": "fixed"
+      },
+      {
+        "merchantId": 5510457,
+        "merchantName": "Viator",
+        "merchantScore": 0.5,
+        "imageUrl": "https://storage.googleapis.com/wl-image/aec2f09d655c608504be9b5528a2ab9be7155f3c",
+        "domain": "viator.com",
+        "isPriority": false,
+        "categoryIds": [
+          27, 4, 86, 11, 18, 313, 31, 35, 213, 15, 255, 251, 201, 278, 155, 315, 89, 328, 91, 316
+        ],
+        "primaryCategoryId": 4,
+        "searchKeywords": [
+          "viator",
+          "local deals",
+          "travel",
+          "event tickets",
+          "arts & entertainment",
+          "food & gourmet",
+          "entertainment",
+          "media",
+          "holidays & occasions",
+          "outdoor recreation",
+          "sporting goods",
+          "cruises",
+          "vacation packages",
+          "music",
+          "weddings",
+          "restaurants",
+          "food & drink",
+          "tours",
+          "nightlife",
+          "theatre",
+          "viator.com"
+        ],
+        "countries": [
+          "US",
+          "CA",
+          "AU",
+          "BE",
+          "FR",
+          "AT",
+          "DE",
+          "HU",
+          "CH",
+          "JP",
+          "SG",
+          "DK",
+          "FI",
+          "SE",
+          "NL",
+          "IT",
+          "NO",
+          "GB"
+        ],
+        "paysNewCustomersOnly": false,
+        "shareAndEarnDisabled": false,
+        "serpInjectionDisabled": false,
+        "browserExtensionDisabled": false,
+        "allRates": [
+          {
+            "kind": "PERCENTAGE",
+            "name": "Completed Tour",
+            "amount": "7.8",
+            "numeric_amount": 7.8
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "USA Tour",
+            "amount": "7.8",
+            "numeric_amount": 7.8
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "New York Tour",
+            "amount": "7.8",
+            "numeric_amount": 7.8
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Cancelled/Refunded Tour, Theme Park Purchase, Purchase with Voucher, Tours or Experiences Tracked through the Viator Travel Agent Program, or Virtual Tours",
+            "amount": "0",
+            "numeric_amount": 0
+          }
+        ],
+        "lastUpdated": "2025-09-18T00:00:02.246Z",
+        "objectID": "merchant_5510457_4873",
+        "_snippetResult": {
+          "merchantName": {
+            "value": "Viator",
+            "matchLevel": "none"
+          }
+        },
+        "_highlightResult": {
+          "merchantName": {
+            "value": "Viator",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "searchKeywords": [
+            {
+              "value": "viator",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "local deals",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "travel",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "event tickets",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "arts & entertainment",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "food & gourmet",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "entertainment",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "media",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "holidays & occasions",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "outdoor recreation",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "sporting goods",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "cruises",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "vacation packages",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "music",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "weddings",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "restaurants",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "food & drink",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "tours",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "nightlife",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "theatre",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "viator.com",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          ]
+        },
+        "maxRateAmount": 7.8,
+        "maxRateType": "percentage"
+      },
+      {
+        "merchantId": 5517486,
+        "merchantName": "Bed Bath & Beyond",
+        "merchantScore": 0.5,
+        "imageUrl": "https://storage.googleapis.com/wl-image/e902ae8f4abaa83a65abbcb5d3c72e661a117af5",
+        "domain": "bedbathandbeyond.com",
+        "isPriority": false,
+        "categoryIds": [
+          18, 191, 15, 131, 128, 201, 38, 126, 81, 84, 278, 186, 122, 214, 9, 22, 83, 1, 20, 185,
+          213, 30, 137, 85, 96, 188, 28, 70, 195, 184, 29, 35, 92, 48, 3, 75, 34, 33, 6, 13, 180,
+          182, 71, 17, 78, 79, 76, 200, 12, 202, 194, 5, 45, 189, 239, 49, 94, 44, 80, 31, 11, 190
+        ],
+        "primaryCategoryId": 191,
+        "searchKeywords": [
+          "bed bath & beyond",
+          "bed",
+          "bath",
+          "beyond",
+          "food & gourmet",
+          "bed & bath",
+          "sporting goods",
+          "video game consoles & games",
+          "camera & optics",
+          "music",
+          "education",
+          "video",
+          "plus",
+          "party supplies",
+          "weddings",
+          "furniture",
+          "telephony",
+          "exercise & fitness",
+          "office",
+          "health & beauty",
+          "maternity",
+          "clothing & apparel",
+          "hardware",
+          "tools",
+          "outdoor recreation",
+          "luggage & bags",
+          "satellite tv & radio",
+          "hobbies & creative arts",
+          "school supplies",
+          "kitchen & dining",
+          "household",
+          "jewelry",
+          "yard & garden",
+          "building supplies",
+          "computers & accessories",
+          "holidays & occasions",
+          "musical instruments & accessories",
+          "men",
+          "vehicles & parts",
+          "big & tall",
+          "babies & kids",
+          "department stores",
+          "animals & pet supplies",
+          "green living (eco-friendly)",
+          "diet & fitness",
+          "contacts & glasses",
+          "shoes",
+          "consumer electronics",
+          "underwear & socks",
+          "petite",
+          "movies",
+          "gifts",
+          "books & magazines",
+          "appliances",
+          "toys & games",
+          "accessories",
+          "lighting",
+          "video games",
+          "women",
+          "arts & crafts",
+          "baby & kids",
+          "juniors",
+          "media",
+          "arts & entertainment",
+          "rugs & flooring",
+          "bedbathandbeyond.com",
+          "bedbathandbeyond"
+        ],
+        "countries": ["PR", "US"],
+        "paysNewCustomersOnly": false,
+        "shareAndEarnDisabled": false,
+        "serpInjectionDisabled": false,
+        "browserExtensionDisabled": false,
+        "allRates": [
+          {
+            "kind": "PERCENTAGE",
+            "name": "Online Purchase",
+            "amount": "4.55",
+            "numeric_amount": 4.55
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Marketplace Purchase",
+            "amount": "0.65",
+            "numeric_amount": 0.65
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Service Offerings, Protection Plans, Loans and Intangible Products",
+            "amount": "0",
+            "numeric_amount": 0
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Gift Cards",
+            "amount": "0",
+            "numeric_amount": 0
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Donations",
+            "amount": "0",
+            "numeric_amount": 0
+          },
+          {
+            "kind": "PERCENTAGE",
+            "name": "Warranties",
+            "amount": "0",
+            "numeric_amount": 0
+          }
+        ],
+        "lastUpdated": "2025-09-18T00:00:02.246Z",
+        "objectID": "merchant_5517486_4925",
+        "_snippetResult": {
+          "merchantName": {
+            "value": "Bed Bath & Beyond",
+            "matchLevel": "none"
+          }
+        },
+        "_highlightResult": {
+          "merchantName": {
+            "value": "Bed Bath & Beyond",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "searchKeywords": [
+            {
+              "value": "bed bath & beyond",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "bed",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "bath",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "beyond",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "food & gourmet",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "bed & bath",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "sporting goods",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "video game consoles & games",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "camera & optics",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "music",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "education",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "video",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "plus",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "party supplies",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "weddings",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "furniture",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "telephony",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "exercise & fitness",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "office",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "health & beauty",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "maternity",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "clothing & apparel",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "hardware",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "tools",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "outdoor recreation",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "luggage & bags",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "satellite tv & radio",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "hobbies & creative arts",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "school supplies",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "kitchen & dining",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "household",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "jewelry",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "yard & garden",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "building supplies",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "computers & accessories",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "holidays & occasions",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "musical instruments & accessories",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "men",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "vehicles & parts",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "big & tall",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "babies & kids",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "department stores",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "animals & pet supplies",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "green living (eco-friendly)",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "diet & fitness",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "contacts & glasses",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "shoes",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "consumer electronics",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "underwear & socks",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "petite",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "movies",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "gifts",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "books & magazines",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "appliances",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "toys & games",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "accessories",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "lighting",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "video games",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "women",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "arts & crafts",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "baby & kids",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "juniors",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "media",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "arts & entertainment",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "rugs & flooring",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "bedbathandbeyond.com",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "bedbathandbeyond",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          ]
+        },
+        "maxRateAmount": 4.55,
+        "maxRateType": "percentage"
+      }
+    ],
+    "totalHits": 16,
+    "totalPages": 26,
+    "currentPage": 0
+  },
+  "source": "ssr"
+}

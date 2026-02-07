@@ -1,0 +1,42 @@
+# MCP Enabled ✅
+
+This project has Model Context Protocol (MCP) servers configured.
+
+## Active MCPs
+
+1. **Supabase MCP** - Direct database schema access
+2. **Filesystem MCP** - Enhanced file operations
+
+## Configuration
+
+Location: `~/.config/claude-code/mcp.json`
+
+## Usage Examples
+
+### Query Database Schema
+```
+Show me the schema for the user_profiles table
+```
+
+### Get Enum Values
+```
+What are all the values for the transaction_status enum?
+```
+
+### Inspect Relationships
+```
+Show me all foreign keys in the cashback_transactions table
+```
+
+### Validate Types
+```
+Does the partner_tokens table have these columns: id, symbol, name, network?
+```
+
+## Documentation
+
+See [MCP_SETUP.md](./MCP_SETUP.md) for full documentation.
+
+## Restart Required
+
+After updating MCP configuration, restart your Claude CLI session to load changes.
