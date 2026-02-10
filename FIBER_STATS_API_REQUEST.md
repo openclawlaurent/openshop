@@ -106,7 +106,7 @@
 ---
 
 ### 4. Daily/Weekly/Monthly Trends
-**Endpoint:** `GET /v1/agent/stats/trends?period=daily&days=30`
+**Endpoint:** `GET /v1/agent/stats/trends?days=30`
 
 **Response:**
 ```json
@@ -262,6 +262,10 @@ const leaderboard = await fetch('https://api.staging.fiber.shop/v1/agent/stats/l
 leaderboard.leaderboard.forEach((agent, i) => {
   console.log(`${agent.rank}. ${agent.agent_name}: $${agent.total_earnings_usd}`);
 });
+
+// Get trends (last 30 days)
+const trends = await fetch('https://api.staging.fiber.shop/v1/agent/stats/trends?days=30').then(r => r.json());
+console.log(`Growth trends:`, trends.data);
 
 // Get agent details
 const agentStats = await fetch(`https://api.staging.fiber.shop/v1/agent/agent_123/stats`).then(r => r.json());
