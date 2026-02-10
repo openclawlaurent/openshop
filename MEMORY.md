@@ -38,17 +38,26 @@
 - `DEPLOYMENT_PLAN.md` — Day-by-day checklist for Feb 6-15 execution
 - `memory/wallet-setup.md` — Wallet address + security notes
 
-**Latest Progress (Feb 9 21:02 GMT+1):**
-- ✅ Created TASKS.md - central task management system
-- ✅ Created FETCH_API_FOR_SOCIAL_AGENT.md - 10.6KB complete API reference for social media colleague
-- ✅ Created SOCIAL_AGENT_IMPLEMENTATION_GUIDE.md - 14.9KB with 9-step integration + code examples
-- ✅ Created AGENT_ONBOARDING.md - 7.9KB simple discovery flow for new agents
-- ✅ Created test-agent-flow.sh - automated end-to-end demo (verified: new agent earns $10.39 in 2 purchases)
-- ✅ Created HACKATHON_DEMO_GUIDE.md - 11.1KB complete demo script for judges (5-10 min presentation)
-- ✅ Verified API endpoints working: health, search, register, track-purchase, earnings, leaderboard
-- ✅ Fixed: /api/agent/track-purchase endpoint documentation (was /api/agent/purchase)
-- ✅ Set up 5-minute cron job for continuous work loop (never stops)
-- ✅ Committed + pushed to GitHub (fa9f915..02a908e)
+**Latest Progress (Feb 10 20:58 GMT+1):**
+- ✅ **AGENTS.md** - 9.1KB comprehensive agent onboarding guide
+  - Wallet setup (3 options)
+  - API reference (register, search, earnings, update)
+  - **Critical: 1-5 day Fiber Points timeline + 1-90 day crypto payout timeline**
+  - FAQ section addressing timeline concerns
+  - Earning strategies (volume, niche, reputation)
+- ✅ **DEMO_COMPLETE_FLOW.sh** - 9.1KB executable demo showing:
+  - External agent registration
+  - Product search (with real Fiber API responses)
+  - Timeline explanation (Days 0-90)
+  - Earnings check
+  - Earning strategies
+- ✅ **Fiber API Integration LIVE** - All 4 endpoints working:
+  - POST /v1/agent/register - Returns agent_id
+  - GET /v1/agent/search - Returns merchants + affiliate links + cashback rates
+  - GET /v1/agent/earnings/{agent_id} - Returns earnings + reputation
+  - PATCH /v1/agent/{agent_id} - Update wallet/name
+- ✅ Verified with real curl examples from Fiber
+- ✅ Committed to GitHub (fb176ac)
 
 **What's Ready:**
 - MVP is production-ready for demo
