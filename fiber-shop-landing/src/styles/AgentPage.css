@@ -1,0 +1,371 @@
+.agent-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 50%, #16213e 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.agent-header {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.agent-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.back-btn {
+  padding: 0.5rem 1rem;
+  background: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  border-color: #0099ff;
+  color: #0099ff;
+}
+
+.agent-header h1 {
+  font-size: 1.8rem;
+  color: #333;
+  flex: 1;
+  text-align: center;
+}
+
+.settings-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.agent-tagline {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.agent-main {
+  flex: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2rem;
+}
+
+.agent-dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.dashboard-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-card h3 {
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #0099ff;
+  padding-bottom: 1rem;
+}
+
+.earnings-display {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.earning-stat {
+  text-align: center;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.earning-stat .label {
+  color: #666;
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+}
+
+.earning-stat .value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0099ff;
+}
+
+.settings-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.setting-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.setting-item label {
+  color: #666;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.setting-item select {
+  padding: 0.7rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  background: white;
+  cursor: pointer;
+}
+
+.setting-note {
+  background: #f0f9ff;
+  padding: 1rem;
+  border-radius: 6px;
+  color: #0099ff;
+  font-size: 0.9rem;
+}
+
+.agent-products {
+  margin-bottom: 3rem;
+}
+
+.agent-products h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-section {
+  margin-bottom: 2rem;
+}
+
+.agent-search {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  box-shadow: 0 8px 32px rgba(0, 212, 255, 0.2);
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.agent-search:focus {
+  outline: none;
+  border-color: #0099ff;
+  box-shadow: 0 8px 32px rgba(0, 153, 255, 0.4);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 153, 255, 0.2);
+}
+
+.product-header {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.product-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cashback-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: linear-gradient(135deg, #0099ff 0%, #0066ff 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 12px rgba(0, 153, 255, 0.3);
+}
+
+.product-details {
+  padding: 1.5rem;
+}
+
+.product-details h4 {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.brand {
+  color: #888;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0099ff;
+  margin-bottom: 0.8rem;
+}
+
+.shop {
+  color: #999;
+  font-size: 0.85rem;
+  margin-bottom: 0.8rem;
+}
+
+.your-earning {
+  background: #f0f9ff;
+  padding: 0.8rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.your-earning .label {
+  color: #0099ff;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.your-earning .amount {
+  font-weight: 700;
+  color: #0099ff;
+}
+
+.share-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background: linear-gradient(135deg, #0099ff 0%, #0066ff 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.share-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 153, 255, 0.3);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: white;
+}
+
+.empty-state p {
+  margin: 0.5rem 0;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.95rem;
+}
+
+.agent-info {
+  margin-bottom: 3rem;
+}
+
+.agent-info h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.tip-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tip-card h4 {
+  color: #0099ff;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.tip-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.demo-section {
+  margin-bottom: 2rem;
+}
+
+.demo-section h2 {
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.agent-footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .earnings-display {
+    grid-template-columns: 1fr;
+  }
+
+  .settings-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
