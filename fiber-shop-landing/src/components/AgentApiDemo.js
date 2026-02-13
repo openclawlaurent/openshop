@@ -2,16 +2,16 @@ import React, { useState, useEffect } from 'react';
 import '../styles/AgentApiDemo.css';
 
 export default function AgentApiDemo() {
-  // Generate random EVM test wallet (0x + 40 hex chars = valid format)
+  // Generate EVM test wallet: 0xtest + 36 random hex (= 42 chars, valid EVM format)
   // Fiber auto-detects: EVM (0x..., 42 chars) → defaults to MON
   const generateTestWallet = () => {
     const hexChars = '0123456789abcdef';
-    let address = '0x';
-    // Generate 40 random hex characters (EVM format)
-    for (let i = 0; i < 40; i++) {
+    let address = '0xtest';
+    // Generate 36 more random hex characters (0xtest = 6 chars, total 42 for EVM)
+    for (let i = 0; i < 36; i++) {
       address += hexChars.charAt(Math.floor(Math.random() * hexChars.length));
     }
-    return address; // Returns: 0x[40 hex chars] = 42 chars total
+    return address; // Returns: 0xtest[36 random hex] = 42 chars total
   };
 
   const [selectedTab, setSelectedTab] = useState('register');
@@ -250,12 +250,12 @@ export default function AgentApiDemo() {
                   fontWeight: 'bold',
                   whiteSpace: 'nowrap'
                 }}
-                title="Generate a new random test wallet"
+                title="Generate a new wallet address"
               >
-                🔄 New Test
+                🔄 Generate
               </button>
             </div>
-            <p className="hint">🧪 Test wallet (randomly generated). Use your real wallet for production.</p>
+            <p className="hint">EVM wallet address. Click "New Test" to generate a unique address.</p>
           </div>
 
           <div className="tabs">
