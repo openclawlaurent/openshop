@@ -6,10 +6,20 @@ export default function DemoPage() {
   // TODO: Once Fiber fixes CORS headers, switch back to direct API calls
   const FIBER_API = '/api/fiber-proxy';
 
+  // Generate random test wallet address
+  const generateTestWallet = () => {
+    const chars = '0123456789abcdef';
+    let address = '0x';
+    for (let i = 0; i < 40; i++) {
+      address += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    return address;
+  };
+
   // Agent Registration State
   const [agentId, setAgentId] = useState(null);
   const [agentName, setAgentName] = useState('My Shopping Agent');
-  const [walletAddress, setWalletAddress] = useState('7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgAsU');
+  const [walletAddress, setWalletAddress] = useState(() => generateTestWallet());
   const [registrationResponse, setRegistrationResponse] = useState(null);
   const [registrationLoading, setRegistrationLoading] = useState(false);
   const [registrationError, setRegistrationError] = useState(null);
@@ -172,13 +182,32 @@ export default function DemoPage() {
 
               <div className="form-group">
                 <label>Wallet Address (Monad)</label>
-                <input
-                  type="text"
-                  value={walletAddress}
-                  onChange={(e) => setWalletAddress(e.target.value)}
-                  placeholder="0x..."
-                />
-                <small>Where your MON rewards will go</small>
+                <div style={{display: 'flex', gap: '10px', marginBottom: '5px'}}>
+                  <input
+                    type="text"
+                    value={walletAddress}
+                    onChange={(e) => setWalletAddress(e.target.value)}
+                    placeholder="0x..."
+                    style={{flex: 1}}
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setWalletAddress(generateTestWallet())}
+                    style={{
+                      padding: '10px 16px',
+                      backgroundColor: '#f0f0f0',
+                      border: '1px solid #ddd',
+                      borderRadius: '4px',
+                      cursor: 'pointer',
+                      fontWeight: 'bold',
+                      whiteSpace: 'nowrap'
+                    }}
+                    title="Generate a new random test wallet"
+                  >
+                    🔄 New Test
+                  </button>
+                </div>
+                <small>🧪 Test wallet (randomly generated). Use your real wallet for production.</small>
               </div>
 
               <button type="submit" disabled={registrationLoading} className="btn btn-primary">

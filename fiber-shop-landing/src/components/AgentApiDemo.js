@@ -2,11 +2,21 @@ import React, { useState, useEffect } from 'react';
 import '../styles/AgentApiDemo.css';
 
 export default function AgentApiDemo() {
+  // Generate random test wallet address
+  const generateTestWallet = () => {
+    const chars = '0123456789abcdef';
+    let address = '0x';
+    for (let i = 0; i < 40; i++) {
+      address += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    return address;
+  };
+
   const [selectedTab, setSelectedTab] = useState('register');
   const [loading, setLoading] = useState(false);
   const [response, setResponse] = useState(null);
   const [agentId, setAgentId] = useState(null);
-  const [walletAddress, setWalletAddress] = useState('7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgAsU');
+  const [walletAddress, setWalletAddress] = useState(() => generateTestWallet());
   const [preferredToken, setPreferredToken] = useState(''); // Optional: MON, BONK, etc.
   const [currentToken, setCurrentToken] = useState(null);
   const [availableTokens, setAvailableTokens] = useState([]);
@@ -219,14 +229,31 @@ export default function AgentApiDemo() {
 
           <div className="agent-wallet">
             <h3>Your Wallet</h3>
-            <input 
-              type="text" 
-              value={walletAddress} 
-              onChange={(e) => setWalletAddress(e.target.value)}
-              placeholder="Monad wallet address"
-              className="wallet-input"
-            />
-            <p className="hint">Where your cashback will be paid (in 1-90 days)</p>
+            <div style={{display: 'flex', gap: '10px', marginBottom: '10px'}}>
+              <input 
+                type="text" 
+                value={walletAddress} 
+                onChange={(e) => setWalletAddress(e.target.value)}
+                placeholder="Monad wallet address"
+                className="wallet-input"
+              />
+              <button
+                onClick={() => setWalletAddress(generateTestWallet())}
+                style={{
+                  padding: '10px 16px',
+                  backgroundColor: '#f0f0f0',
+                  border: '1px solid #ddd',
+                  borderRadius: '4px',
+                  cursor: 'pointer',
+                  fontWeight: 'bold',
+                  whiteSpace: 'nowrap'
+                }}
+                title="Generate a new random test wallet"
+              >
+                🔄 New Test
+              </button>
+            </div>
+            <p className="hint">🧪 Test wallet (randomly generated). Use your real wallet for production.</p>
           </div>
 
           <div className="tabs">
