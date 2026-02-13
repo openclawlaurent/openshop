@@ -112,6 +112,15 @@
   font-family: inherit;
 }
 
+.reg-select {
+  background: rgba(20,20,20,0.8);
+}
+
+.reg-select option {
+  background: #1a1a1a;
+  color: #fff;
+}
+
 .reg-input:focus,
 .reg-select:focus {
   border-color: rgba(255,255,255,0.3);
@@ -245,13 +254,18 @@
 .setting-select {
   width: 100%;
   padding: 8px 12px;
-  background: rgba(255,255,255,0.04);
+  background: rgba(20,20,20,0.8);
   border: 1px solid rgba(255,255,255,0.1);
   border-radius: 6px;
   color: #fff;
   font-size: 12px;
   font-weight: 600;
   transition: border-color 0.2s;
+}
+
+.setting-select option {
+  background: #1a1a1a;
+  color: #fff;
 }
 
 .setting-select:focus {
