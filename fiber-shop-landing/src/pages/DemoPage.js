@@ -6,14 +6,16 @@ export default function DemoPage() {
   // TODO: Once Fiber fixes CORS headers, switch back to direct API calls
   const FIBER_API = '/api/fiber-proxy';
 
-  // Generate random test wallet address
+  // Generate random EVM test wallet (0x + 40 hex chars = valid format)
+  // Fiber auto-detects: EVM (0x..., 42 chars) → defaults to MON
   const generateTestWallet = () => {
-    const chars = '0123456789abcdef';
+    const hexChars = '0123456789abcdef';
     let address = '0x';
+    // Generate 40 random hex characters (EVM format)
     for (let i = 0; i < 40; i++) {
-      address += chars.charAt(Math.floor(Math.random() * chars.length));
+      address += hexChars.charAt(Math.floor(Math.random() * hexChars.length));
     }
-    return address;
+    return address; // Returns: 0x[40 hex chars] = 42 chars total
   };
 
   // Agent Registration State
