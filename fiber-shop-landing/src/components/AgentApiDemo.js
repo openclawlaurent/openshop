@@ -7,6 +7,9 @@ export default function AgentApiDemo() {
   const [response, setResponse] = useState(null);
   const [agentId, setAgentId] = useState(null);
   const [walletAddress, setWalletAddress] = useState('7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgAsU');
+  const [preferredToken, setPreferredToken] = useState(''); // Optional: MON, BONK, etc.
+  const [currentToken, setCurrentToken] = useState(null);
+  const [availableTokens, setAvailableTokens] = useState([]);
   const [searchQuery, setSearchQuery] = useState('running shoes');
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [searchResults, setSearchResults] = useState([]);
@@ -19,23 +22,46 @@ export default function AgentApiDemo() {
   const handleRegisterAgent = async () => {
     setLoading(true);
     try {
+      const body = {
+        agent_name: 'FiberAgent Demo Agent',
+        wallet_address: walletAddress,
+        description: 'Demo shopping agent discovering products via FiberAgent'
+      };
+      
+      // Add preferred token if specified
+      if (preferredToken) {
+        body.preferred_token = preferredToken;
+      }
+
       const res = await fetch(FIBER_API, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           method: 'POST',
           endpoint: 'agent/register',
-          body: {
-            agent_name: 'FiberAgent Demo Agent',
-            wallet_address: walletAddress,
-            description: 'Demo shopping agent discovering products via FiberAgent'
-          }
+          body
         })
       });
       const data = await res.json();
-      setResponse(data);
-      if (data.success) {
+      
+      // Handle 409 Conflict (already registered)
+      if (res.status === 409) {
+        setResponse({ 
+          warning: 'Agent already registered',
+          existing_agent_id: data.existing_agent_id,
+          message: 'This wallet is already registered. Using existing agent ID.'
+        });
+        setAgentId(data.existing_agent_id);
+        // Fetch token info
+        await handleGetTokenInfo(data.existing_agent_id);
+      } else if (data.success) {
+        setResponse(data);
         setAgentId(data.agent_id);
+        setCurrentToken(data.preferred_token);
+        // Fetch available tokens
+        await handleGetTokenInfo(data.agent_id);
+      } else {
+        setResponse(data);
       }
     } catch (error) {
       setResponse({ error: error.message });
@@ -60,7 +86,7 @@ export default function AgentApiDemo() {
           queryParams: {
             keywords: searchQuery,
             agent_id: agentId,
-            wallet: walletAddress,
+            // wallet parameter is now optional (uses registered wallet)
             limit: 5
           }
         })
@@ -68,6 +94,66 @@ export default function AgentApiDemo() {
       const data = await res.json();
       setSearchResults(data.results || []);
       setResponse(data);
+    } catch (error) {
+      setResponse({ error: error.message });
+    }
+    setLoading(false);
+  };
+
+  // Get current and available tokens
+  const handleGetTokenInfo = async (agentIdToUse) => {
+    if (!agentIdToUse) {
+      setResponse({ error: 'Please register agent first' });
+      return;
+    }
+    setLoading(true);
+    try {
+      const res = await fetch(FIBER_API, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          method: 'GET',
+          endpoint: `agent/${agentIdToUse}/token`
+        })
+      });
+      const data = await res.json();
+      if (data.success) {
+        setCurrentToken(data.current_token);
+        setAvailableTokens(data.available_tokens || []);
+      }
+      setResponse(data);
+    } catch (error) {
+      setResponse({ error: error.message });
+    }
+    setLoading(false);
+  };
+
+  // Change payout token
+  const handleChangeToken = async (newToken) => {
+    if (!agentId) {
+      setResponse({ error: 'Please register agent first' });
+      return;
+    }
+    setLoading(true);
+    try {
+      const res = await fetch(FIBER_API, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          method: 'PUT',
+          endpoint: `agent/${agentId}/token`,
+          body: {
+            token_symbol: newToken
+          }
+        })
+      });
+      const data = await res.json();
+      if (data.success) {
+        setCurrentToken(data.current_token);
+        setResponse({ success: true, message: `Token changed to ${newToken}` });
+      } else {
+        setResponse(data);
+      }
     } catch (error) {
       setResponse({ error: error.message });
     }
@@ -168,12 +254,36 @@ export default function AgentApiDemo() {
             >
               4️⃣ Earnings
             </button>
+            <button 
+              className={`tab ${selectedTab === 'tokens' ? 'active' : ''}`}
+              onClick={() => setSelectedTab('tokens')}
+            >
+              💰 Token
+            </button>
           </div>
 
           {selectedTab === 'register' && (
             <div className="control-section">
               <h3>Step 1: Register Your Agent</h3>
-              <p>Register your agent to start earning MON coin rewards.</p>
+              <p>Register your agent to start earning crypto rewards.</p>
+              
+              <div style={{marginBottom: '15px'}}>
+                <label style={{display: 'block', marginBottom: '8px'}}>
+                  <strong>Preferred Payout Token (optional):</strong>
+                </label>
+                <select
+                  value={preferredToken}
+                  onChange={(e) => setPreferredToken(e.target.value)}
+                  className="search-input"
+                  style={{padding: '10px'}}
+                >
+                  <option value="">Auto-detect (MON for EVM, BONK for Solana)</option>
+                  <option value="MON">MON (Monad)</option>
+                  <option value="BONK">BONK (Solana)</option>
+                </select>
+                <p className="hint">Choose which token to receive earnings in. Defaults based on wallet type if not specified.</p>
+              </div>
+
               <button 
                 className="action-btn"
                 onClick={handleRegisterAgent}
@@ -181,6 +291,34 @@ export default function AgentApiDemo() {
               >
                 {loading ? 'Registering...' : 'Register Agent'}
               </button>
+
+              {currentToken && (
+                <div style={{marginTop: '15px', padding: '10px', backgroundColor: '#f0f0f0', borderRadius: '6px'}}>
+                  <p><strong>✅ Current Payout Token:</strong> {currentToken}</p>
+                  {availableTokens.length > 0 && (
+                    <div style={{marginTop: '10px'}}>
+                      <p><strong>Change to:</strong></p>
+                      {availableTokens.map(token => (
+                        <button
+                          key={token}
+                          onClick={() => handleChangeToken(token)}
+                          style={{
+                            marginRight: '10px',
+                            padding: '8px 12px',
+                            backgroundColor: '#fff',
+                            border: '1px solid #ddd',
+                            borderRadius: '4px',
+                            cursor: 'pointer',
+                            marginBottom: '5px'
+                          }}
+                        >
+                          {token}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              )}
             </div>
           )}
 
@@ -329,6 +467,65 @@ export default function AgentApiDemo() {
                   </div>
                 </div>
               </div>
+            </div>
+          )}
+
+          {selectedTab === 'tokens' && (
+            <div className="control-section">
+              <h3>💰 Manage Payout Token</h3>
+              <p>View and change which token you want to receive earnings in.</p>
+              {!agentId && <p className="warning">⚠️ Register your agent first</p>}
+              <button 
+                className="action-btn"
+                onClick={() => handleGetTokenInfo(agentId)}
+                disabled={loading || !agentId}
+              >
+                {loading ? '⏳ Loading...' : '🔄 Refresh Token Info'}
+              </button>
+              
+              {currentToken && (
+                <div style={{marginTop: '20px', padding: '15px', backgroundColor: '#f0f0f0', borderRadius: '8px'}}>
+                  <h4>Current Payout Token</h4>
+                  <p style={{fontSize: '1.5rem', fontWeight: 'bold', color: '#00d084', marginBottom: '15px'}}>
+                    {currentToken}
+                  </p>
+                  
+                  {availableTokens.length > 0 && (
+                    <div>
+                      <p><strong>Switch to:</strong></p>
+                      <div style={{display: 'flex', gap: '10px', flexWrap: 'wrap'}}>
+                        {availableTokens.map(token => (
+                          token !== currentToken && (
+                            <button
+                              key={token}
+                              onClick={() => handleChangeToken(token)}
+                              style={{
+                                padding: '10px 16px',
+                                backgroundColor: '#fff',
+                                border: '2px solid #ddd',
+                                borderRadius: '6px',
+                                cursor: 'pointer',
+                                fontWeight: 'bold',
+                                transition: 'all 0.2s'
+                              }}
+                              onMouseEnter={(e) => {
+                                e.target.style.borderColor = '#00d084';
+                                e.target.style.color = '#00d084';
+                              }}
+                              onMouseLeave={(e) => {
+                                e.target.style.borderColor = '#ddd';
+                                e.target.style.color = '#000';
+                              }}
+                            >
+                              {token}
+                            </button>
+                          )
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )}
             </div>
           )}
         </div>
