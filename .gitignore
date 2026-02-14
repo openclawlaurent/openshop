@@ -44,3 +44,4 @@ temp/
 contracts/build/
 contracts/artifacts/
 contracts/cache/
+.env.backup
