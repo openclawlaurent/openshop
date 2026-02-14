@@ -125,22 +125,12 @@ export default function DemoPage() {
 
             <div className={styles.field}>
               <label>Wallet Address (Optional)</label>
-              <div style={{ display: 'flex', gap: '8px' }}>
-                <input 
-                  value={walletAddress} 
-                  onChange={e => setWalletAddress(e.target.value)} 
-                  placeholder="0xtest..." 
-                  style={{ flex: 1, fontFamily: 'monospace', fontSize: '12px' }}
-                />
-                <button 
-                  type="button"
-                  onClick={() => setWalletAddress(generateTestWallet())}
-                  style={{ padding: '8px 12px', background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: '6px', color: '#fff', cursor: 'pointer' }}
-                  title="Generate random test wallet"
-                >
-                  ↻
-                </button>
-              </div>
+              <input 
+                value={walletAddress} 
+                onChange={e => setWalletAddress(e.target.value)} 
+                placeholder="0xtest..." 
+                style={{ fontFamily: 'monospace', fontSize: '12px' }}
+              />
             </div>
 
             <button type="submit" disabled={regLoading} className={styles.btnSubmit}>
