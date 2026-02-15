@@ -77,6 +77,20 @@
     "hackathon": "Moltiverse 2026 - Agent Track"
   },
   
+  "rewardTimeline": {
+    "fiberPoints": {
+      "description": "Fiber Points are delivered once the transaction is confirmed",
+      "timeline": "~48 hours after purchase",
+      "conditions": "Transaction must be successfully completed"
+    },
+    "cryptoToken": {
+      "description": "Your chosen token (MON, BONK, etc.) is delivered after the item cannot be returned",
+      "timeline": "Up to 90 days after purchase (standard return window)",
+      "conditions": "Return period must be closed and transaction confirmed",
+      "network": "Monad"
+    }
+  },
+
   "launchDate": "2026-02-06",
   "hackathonSubmission": true,
   "status": "live"
