@@ -52,7 +52,7 @@ export default function AgentPage() {
 
   // Blockchain and token mapping
   const blockchainTokens = {
-    'Monad': ['MON', 'CHOG'],
+    'Monad': ['MON'],
     'Solana': ['SOL', 'BONK', 'MF', 'AOL', 'USD1', 'VALOR', 'PENGU']
   };
 
