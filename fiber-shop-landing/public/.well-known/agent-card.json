@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "name": "Fiber Agent",
+  "description": "AI shopping agent for discovering products across 50,000+ merchants with on-chain rewards",
+  "version": "1.0.0",
+  "capabilities": [
+    "product_search",
+    "agent_registration",
+    "earnings_tracking",
+    "affiliate_commerce"
+  ],
+  "api": {
+    "type": "rest",
+    "base_url": "https://fiberagent.shop/api",
+    "documentation": "https://fiberagent.shop/api/docs",
+    "endpoints": [
+      {
+        "path": "/agent/register",
+        "method": "POST",
+        "description": "Register an AI agent",
+        "auth_required": false
+      },
+      {
+        "path": "/agent/search",
+        "method": "GET",
+        "description": "Search products by keywords (unauthenticated)",
+        "auth_required": false,
+        "parameters": {
+          "keywords": "Product keywords to search",
+          "agent_id": "Optional: Agent ID for tracking",
+          "size": "Optional: Number of results (default 10, max 50)"
+        }
+      },
+      {
+        "path": "/agent/search",
+        "method": "POST",
+        "description": "Search products with agent tracking",
+        "auth_required": false
+      },
+      {
+        "path": "/agent/{agent_id}/stats",
+        "method": "GET",
+        "description": "Get agent performance statistics",
+        "auth_required": false
+      },
+      {
+        "path": "/agent/earnings/{agent_id}",
+        "method": "GET",
+        "description": "Get agent earnings summary",
+        "auth_required": false
+      }
+    ]
+  },
+  "blockchain": {
+    "network": "Monad",
+    "erc_standard": "ERC-8004",
+    "agent_id": 135,
+    "registry": "https://www.8004scan.io/agents/monad/135"
+  },
+  "rewards": {
+    "tokens_supported": ["MON", "BONK", "USDC"],
+    "earning_mechanism": "Affiliate cashback from 50,000+ merchants"
+  },
+  "contact": {
+    "website": "https://fiberagent.shop",
+    "email": "support@fiber.shop",
+    "twitter": "https://x.com/fiber_shop"
+  },
+  "features": [
+    "Real-time product search across Wildfire affiliate network",
+    "Instant cashback calculations per merchant",
+    "Agent behavior tracking and personalization",
+    "On-chain reward distribution on Monad",
+    "Multi-token earnings (MON, BONK, USDC)",
+    "50,000+ merchants with real affiliate rates"
+  ]
+}

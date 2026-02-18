@@ -303,11 +303,14 @@ app.post('/api/agent/register', async (req, res) => {
     const existingAgent = await get(`SELECT * FROM agents WHERE agent_id = ?`, [agent_id]);
     
     if (existingAgent) {
-      // Update existing agent
-      await run(
-        `UPDATE agents SET agent_name = ?, wallet_address = ?, crypto_preference = ? WHERE agent_id = ?`,
-        [agent_name || agent_id, wallet_address, crypto_preference || 'MON', agent_id]
-      );
+      // Return 409 Conflict - agent already registered
+      return res.status(409).json({
+        error: 'Agent already registered',
+        error_code: 'AGENT_ALREADY_EXISTS',
+        agent_id: agent_id,
+        registered_at: existingAgent.registered_at,
+        message: 'This agent ID is already in use. Use agent_id/stats to view existing record or register with a different agent_id.'
+      });
     } else {
       // Create new agent
       const token = generateToken();
@@ -324,7 +327,7 @@ app.post('/api/agent/register', async (req, res) => {
 
     res.json({
       success: true,
-      message: existingAgent ? 'Agent updated successfully' : 'Agent registered successfully',
+      message: 'Agent registered successfully',
       agent: agent
     });
   } catch (err) {
@@ -366,13 +369,21 @@ app.get('/api/agent/search', async (req, res) => {
       );
     }
 
-    // Search products
+    // Search products (with deduplication by productId)
+    const seenIds = new Set();
     const filteredProducts = mockProducts.results
       .filter(p => 
         p.title.toLowerCase().includes(query.toLowerCase()) ||
         p.brand.toLowerCase().includes(query.toLowerCase()) ||
         p.shop.name.toLowerCase().includes(query.toLowerCase())
       )
+      .filter(p => {
+        if (seenIds.has(p.productId)) {
+          return false;
+        }
+        seenIds.add(p.productId);
+        return true;
+      })
       .slice(0, parseInt(size));
 
     // Track search history
@@ -410,47 +421,57 @@ app.post('/api/agent/search', async (req, res) => {
   try {
     await trackStat('endpoint', 'search');
 
-    // Check if agent exists, create if not
-    let agent = await get(`SELECT * FROM agents WHERE agent_id = ?`, [agent_id]);
-    if (!agent) {
-      const token = generateToken();
-      await run(
-        `INSERT INTO agents (agent_id, agent_name, wallet_address, crypto_preference, token)
-         VALUES (?, ?, ?, ?, ?)`,
-        [agent_id, agent_id, `0x${agent_id}`, 'MON', token]
-      );
+    // Support unauthenticated search (agent_id is optional)
+    let agent = null;
+    let actualAgentId = agent_id || 'anonymous';
+
+    if (agent_id) {
+      // Only track stats if agent_id provided
       agent = await get(`SELECT * FROM agents WHERE agent_id = ?`, [agent_id]);
+      if (agent) {
+        // Update stats only for registered agents
+        await run(
+          `UPDATE agents SET api_calls_made = api_calls_made + 1, searches_made = searches_made + 1 
+           WHERE agent_id = ?`,
+          [agent_id]
+        );
+      }
     }
 
-    // Update agent stats
-    await run(
-      `UPDATE agents SET api_calls_made = api_calls_made + 1, searches_made = searches_made + 1 
-       WHERE agent_id = ?`,
-      [agent_id]
-    );
-
-    // Track search history
+    // Perform search regardless of authentication
+    const seenIds = new Set();
     const filteredProducts = mockProducts.results
       .filter(p => 
         p.title.toLowerCase().includes(query.toLowerCase()) ||
         p.brand.toLowerCase().includes(query.toLowerCase()) ||
         p.shop.name.toLowerCase().includes(query.toLowerCase())
       )
+      .filter(p => {
+        if (seenIds.has(p.productId)) {
+          return false;
+        }
+        seenIds.add(p.productId);
+        return true;
+      })
       .slice(0, size);
 
-    await run(
-      `INSERT INTO search_history (agent_id, query, results_count) VALUES (?, ?, ?)`,
-      [agent_id, query, filteredProducts.length]
-    );
+    // Track search history if agent_id provided
+    if (agent_id) {
+      await run(
+        `INSERT INTO search_history (agent_id, query, results_count) VALUES (?, ?, ?)`,
+        [agent_id, query, filteredProducts.length]
+      );
+    }
 
     res.json({
       success: true,
       query,
-      agent_id,
+      agent_id: actualAgentId,
+      authenticated: !!agent_id,
       results: filteredProducts,
       total_results: filteredProducts.length,
       timestamp: new Date(),
-      note: 'Each product includes cashback amount. Agent will receive this amount in crypto when purchase is tracked.'
+      note: 'Each product includes cashback amount. Register an agent to track purchases and earn rewards.'
     });
   } catch (err) {
     console.error('Search error:', err);
@@ -933,6 +954,104 @@ app.post('/api/agent/predict-kickback', async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 });
+
+// ============ AGENT DISCOVERABILITY ENDPOINTS ============
+
+// OpenAPI Documentation Endpoint
+app.get('/api/docs', (req, res) => {
+  try {
+    const openapi = require('./openapi.json');
+    res.setHeader('Content-Type', 'application/json');
+    res.json(openapi);
+  } catch (err) {
+    console.error('Error serving OpenAPI spec:', err);
+    res.status(500).json({ error: 'Failed to load OpenAPI specification' });
+  }
+});
+
+// Agent Card JSON (A2A Discovery)
+app.get('/.well-known/agent-card.json', (req, res) => {
+  try {
+    const agentCard = {
+      schema_version: "1.0.0",
+      name: "Fiber Agent",
+      description: "AI shopping agent for discovering products across 50,000+ merchants with on-chain rewards",
+      version: "1.0.0",
+      capabilities: [
+        "product_search",
+        "agent_registration",
+        "earnings_tracking",
+        "affiliate_commerce"
+      ],
+      api: {
+        type: "rest",
+        base_url: "https://fiberagent.shop/api",
+        documentation: "https://fiberagent.shop/api/docs",
+        endpoints: [
+          {
+            path: "/agent/register",
+            method: "POST",
+            description: "Register an AI agent",
+            auth_required: false
+          },
+          {
+            path: "/agent/search",
+            method: "GET",
+            description: "Search products by keywords (unauthenticated)",
+            auth_required: false
+          },
+          {
+            path: "/agent/search",
+            method: "POST",
+            description: "Search products with agent tracking",
+            auth_required: false
+          },
+          {
+            path: "/agent/{agent_id}/stats",
+            method: "GET",
+            description: "Get agent performance statistics",
+            auth_required: false
+          },
+          {
+            path: "/agent/earnings/{agent_id}",
+            method: "GET",
+            description: "Get agent earnings summary",
+            auth_required: false
+          }
+        ]
+      },
+      blockchain: {
+        network: "Monad",
+        erc_standard: "ERC-8004",
+        agent_id: 135,
+        registry: "https://www.8004scan.io/agents/monad/135"
+      },
+      rewards: {
+        tokens_supported: ["MON", "BONK", "USDC"],
+        earning_mechanism: "Affiliate cashback from 50,000+ merchants"
+      },
+      contact: {
+        website: "https://fiberagent.shop",
+        email: "support@fiber.shop",
+        twitter: "https://x.com/fiber_shop"
+      },
+      features: [
+        "Real-time product search across Wildfire affiliate network",
+        "Instant cashback calculations",
+        "Agent behavior tracking and personalization",
+        "On-chain reward distribution",
+        "Multi-token earnings"
+      ]
+    };
+    res.setHeader('Content-Type', 'application/json');
+    res.json(agentCard);
+  } catch (err) {
+    console.error('Error serving agent card:', err);
+    res.status(500).json({ error: 'Failed to load agent card' });
+  }
+});
+
+// ============ END AGENT DISCOVERABILITY ENDPOINTS ============
 
 // Initialize mock data if database is empty
 async function initializeMockData() {

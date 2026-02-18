@@ -1,0 +1,317 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Fiber Agent API",
+    "description": "AI shopping agent enabling autonomous agents to discover and shop across 50,000+ merchants with on-chain rewards",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Fiber Agent Support",
+      "url": "https://fiberagent.shop",
+      "email": "support@fiber.shop"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://fiberagent.shop/api",
+      "description": "Production API"
+    },
+    {
+      "url": "http://localhost:5000/api",
+      "description": "Development API"
+    }
+  ],
+  "paths": {
+    "/agent/register": {
+      "post": {
+        "summary": "Register a new AI agent",
+        "tags": ["Agent Management"],
+        "description": "Register an AI agent with wallet address and preferences. Returns agent_id for future API calls.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["agent_id", "wallet_address"],
+                "properties": {
+                  "agent_id": {
+                    "type": "string",
+                    "description": "Unique identifier for the agent",
+                    "example": "agent_ai_001"
+                  },
+                  "agent_name": {
+                    "type": "string",
+                    "description": "Human-readable name for the agent",
+                    "example": "My Shopping Bot"
+                  },
+                  "wallet_address": {
+                    "type": "string",
+                    "description": "EVM wallet address (Monad) for receiving rewards",
+                    "example": "0x790b405d466f7fddcee4be90d504eb56e3fedcae"
+                  },
+                  "crypto_preference": {
+                    "type": "string",
+                    "enum": ["MON", "BONK", "USDC"],
+                    "description": "Preferred reward token",
+                    "example": "MON"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Agent registered successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": { "type": "boolean" },
+                    "agent": {
+                      "type": "object",
+                      "properties": {
+                        "agent_id": { "type": "string" },
+                        "agent_name": { "type": "string" },
+                        "wallet_address": { "type": "string" },
+                        "crypto_preference": { "type": "string" },
+                        "registered_at": { "type": "string", "format": "date-time" }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Missing required fields"
+          }
+        }
+      }
+    },
+    "/agent/search": {
+      "get": {
+        "summary": "Search products (GET)",
+        "tags": ["Product Search"],
+        "description": "Search for products by keywords. Can be used unauthenticated (as 'anonymous') or with agent_id to track stats.",
+        "parameters": [
+          {
+            "name": "keywords",
+            "in": "query",
+            "required": true,
+            "schema": { "type": "string" },
+            "description": "Product keywords to search for",
+            "example": "nike shoes"
+          },
+          {
+            "name": "agent_id",
+            "in": "query",
+            "required": false,
+            "schema": { "type": "string" },
+            "description": "Agent ID for tracking stats. If omitted, tracked as 'anonymous'"
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "required": false,
+            "schema": { "type": "integer", "default": 10 },
+            "description": "Number of results to return (max 50)"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Search results with product data and cashback rates",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": { "type": "boolean" },
+                    "query": { "type": "string" },
+                    "agent_id": { "type": "string" },
+                    "total_results": { "type": "integer" },
+                    "results": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "productId": { "type": "string" },
+                          "title": { "type": "string" },
+                          "brand": { "type": "string" },
+                          "price": { "type": "number" },
+                          "image": { "type": "string", "format": "uri" },
+                          "affiliate_link": { "type": "string", "format": "uri" },
+                          "shop": {
+                            "type": "object",
+                            "properties": {
+                              "name": { "type": "string" },
+                              "domain": { "type": "string" }
+                            }
+                          },
+                          "cashback": {
+                            "type": "object",
+                            "properties": {
+                              "rate": { "type": "string", "example": "5%" },
+                              "amount": { "type": "number", "example": 5.0 }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Missing keywords parameter"
+          }
+        }
+      },
+      "post": {
+        "summary": "Search products (POST)",
+        "tags": ["Product Search"],
+        "description": "Search for products by keywords (POST variant). Requires agent_id.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["query", "agent_id"],
+                "properties": {
+                  "query": { "type": "string", "example": "nike shoes" },
+                  "agent_id": { "type": "string" },
+                  "size": { "type": "integer", "default": 10 }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Search results"
+          }
+        }
+      }
+    },
+    "/agent/{agent_id}/stats": {
+      "get": {
+        "summary": "Get agent statistics",
+        "tags": ["Agent Management"],
+        "description": "Retrieve performance metrics for a specific agent",
+        "parameters": [
+          {
+            "name": "agent_id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string" },
+            "example": "agent_ai_001"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Agent statistics",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "agent_id": { "type": "string" },
+                    "total_searches": { "type": "integer" },
+                    "total_earnings": { "type": "number" },
+                    "total_purchases_tracked": { "type": "integer" },
+                    "api_calls_made": { "type": "integer" }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Agent not found"
+          }
+        }
+      }
+    },
+    "/agent/earnings/{agent_id}": {
+      "get": {
+        "summary": "Get agent earnings",
+        "tags": ["Rewards"],
+        "description": "Retrieve total earnings and breakdown by token type",
+        "parameters": [
+          {
+            "name": "agent_id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Earnings summary"
+          }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "summary": "Health check",
+        "tags": ["System"],
+        "description": "Check API status and get basic metrics",
+        "responses": {
+          "200": {
+            "description": "Service is healthy"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Agent": {
+        "type": "object",
+        "properties": {
+          "agent_id": { "type": "string" },
+          "agent_name": { "type": "string" },
+          "wallet_address": { "type": "string" },
+          "crypto_preference": { "type": "string" },
+          "registered_at": { "type": "string", "format": "date-time" },
+          "total_earnings": { "type": "number" },
+          "api_calls_made": { "type": "integer" }
+        }
+      },
+      "Product": {
+        "type": "object",
+        "properties": {
+          "productId": { "type": "string" },
+          "title": { "type": "string" },
+          "brand": { "type": "string" },
+          "price": { "type": "number" },
+          "image": { "type": "string", "format": "uri" },
+          "affiliate_link": { "type": "string", "format": "uri" },
+          "shop": { "type": "object" },
+          "cashback": { "type": "object" }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Agent Management",
+      "description": "Register agents, manage profiles"
+    },
+    {
+      "name": "Product Search",
+      "description": "Search and discover products"
+    },
+    {
+      "name": "Rewards",
+      "description": "Track earnings and rewards"
+    },
+    {
+      "name": "System",
+      "description": "Health and status endpoints"
+    }
+  ]
+}
