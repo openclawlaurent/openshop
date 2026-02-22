@@ -75,6 +75,19 @@
     "tokens_supported": ["MON", "BONK", "USDC"],
     "earning_mechanism": "Affiliate cashback from 50,000+ merchants via Fiber/Wildfire network"
   },
+  "mcp": {
+    "transport": "streamable-http",
+    "url": "https://fiberagent.shop/api/mcp",
+    "capabilities": ["tools", "resources", "prompts"],
+    "tools": ["search_products", "search_by_intent", "register_agent", "get_agent_stats", "compare_cashback"],
+    "claude_desktop_config": {
+      "mcpServers": {
+        "fiberagent": {
+          "url": "https://fiberagent.shop/api/mcp"
+        }
+      }
+    }
+  },
   "contact": {
     "website": "https://fiberagent.shop",
     "email": "support@fiber.shop",
