@@ -264,16 +264,29 @@ function registerAgent(agentId, agentName, walletAddress, cryptoPreference = 'MO
 
 function searchProducts(query, size = 10) {
   const seenIds = new Set();
-  const filteredProducts = mockProducts.results
-    .filter(p =>
-      p.title.toLowerCase().includes(query.toLowerCase()) ||
-      p.brand.toLowerCase().includes(query.toLowerCase()) ||
-      p.shop.name.toLowerCase().includes(query.toLowerCase())
-    )
+  const queryLower = query.toLowerCase();
+  const queryWords = queryLower.split(/\s+/).filter(w => w.length > 0);
+
+  // Score products: more matching words = higher score
+  const scored = mockProducts.results.map(p => {
+    const searchable = `${p.title} ${p.brand} ${p.shop.name}`.toLowerCase();
+    
+    // Check full query match first (highest priority)
+    if (searchable.includes(queryLower)) {
+      return { product: p, score: 100 };
+    }
+
+    // Count individual word matches
+    const matchCount = queryWords.filter(w => searchable.includes(w)).length;
+    return { product: p, score: matchCount };
+  });
+
+  const filteredProducts = scored
+    .filter(s => s.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .map(s => s.product)
     .filter(p => {
-      if (seenIds.has(p.productId)) {
-        return false;
-      }
+      if (seenIds.has(p.productId)) return false;
       seenIds.add(p.productId);
       return true;
     })

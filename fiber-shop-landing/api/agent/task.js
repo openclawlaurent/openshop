@@ -20,7 +20,8 @@ function extractKeywords(intent) {
     'show', 'search', 'with', 'and', 'or', 'under', 'over', 'below',
     'above', 'less', 'than', 'more', 'highest', 'lowest', 'deals',
     'deal', 'offer', 'offers', 'discount', 'discounts', 'please',
-    'can', 'you', 'could', 'would', 'should'
+    'can', 'you', 'could', 'would', 'should', 'of', 'in', 'on', 'at',
+    'to', 'is', 'it', 'my', 'that', 'this', 'any', 'all'
   ]);
 
   const words = intent.toLowerCase()
