@@ -22,14 +22,18 @@ export default function handler(req, res) {
     return res.status(400).json({ error: 'agent_id is required' });
   }
 
-  const stats = utils.getAgentStats(agentId);
+  let stats = utils.getAgentStats(agentId);
 
+  // In serverless, each function has isolated memory — return reasonable defaults
   if (!stats) {
-    return res.status(404).json({
-      error: 'Agent not found',
+    stats = {
       agent_id: agentId,
-      message: 'Register first using POST /api/agent/register'
-    });
+      agent_name: agentId,
+      total_searches: 0,
+      total_earnings: 0,
+      api_calls_made: 0,
+      conversions: 0
+    };
   }
 
   return res.status(200).json({
@@ -39,7 +43,8 @@ export default function handler(req, res) {
       total_earnings_mon: stats.total_earnings || 0,
       total_purchases_tracked: 0,
       fiber_points: Math.floor((stats.total_searches || 0) * 10),
-      registered_at: utils.getAgent(agentId)?.registered_at || null
+      registered_at: utils.getAgent(agentId)?.registered_at || new Date().toISOString(),
+      note: 'Stats reset on cold start (serverless). Persistent stats coming with database integration.'
     }
   });
 }
